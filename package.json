@@ -1,0 +1,36 @@
+{
+  "name": "chart-plugin-echart",
+  "version": "0.1.0",
+  "private": true,
+  "description": "uyun show 图表组件集成 echarts 的示例",
+  "author": "soluteli",
+  "license": "ISC",
+  "scripts": {
+    "start": "./node_modules/@uyun/cli/bin/everest.js start -m development -o",
+    "build": "./node_modules/@uyun/cli/bin/everest.js build",
+    "build:map": "everest build -m map",
+    "inspect": "everest inspect start",
+    "lint": "everest lint src --fix",
+    "serve": "everest serve build -o",
+    "test": "jest",
+    "postbuild": "npm run zip",
+    "postbuild:map": "npm run zip",
+    "zip": "ushow-zip"
+  },
+  "dependencies": {
+    "@uyun/ushow": "^0.0.28",
+    "echarts": "^4.2.1",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@uyun/babel-preset-everest": "^0.3.22",
+    "@uyun/cli": "^0.3.22",
+    "@uyun/eslint-config-standard": "^0.3.22",
+    "babel-plugin-import": "^1.12.0",
+    "jest": "^24.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.uyunsoft.cn/everest/uyun-web-template.git"
+  }
+}

@@ -1,0 +1,62 @@
+html ::-webkit-scrollbar{
+  /* background-color: #000 !important; */
+  visibility: hidden;
+}
+
+html ::-webkit-scrollbar-track  {
+  /* background-color: #ffeabe !important; */
+  visibility: hidden;
+}
+
+html ::-webkit-scrollbar-thumb {
+  /* background-color: #ca7171 !important; */
+  visibility: hidden;
+}
+
+.components-options::-webkit-scrollbar {
+  width: 12px;
+  background-color: #083c60 !important;
+  visibility: visible !important;
+}
+.components-options::-webkit-scrollbar-track {
+  background-color: #083c60 !important;
+  visibility: visible !important;
+}
+.components-options::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  visibility: visible !important;
+  background-color: #018fd4 !important;
+  box-shadow:inset 6px #fff !important;
+}
+
+#components-options-id::-webkit-scrollbar {
+  width: 12px;
+  background-color: #083c60 !important;
+  visibility: visible !important;
+}
+#components-options-id::-webkit-scrollbar-track {
+  background-color: #083c60 !important;
+  visibility: visible !important;
+}
+#components-options-id::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  visibility: visible !important;
+  background-color: #018fd4 !important;
+  box-shadow:inset 6px #fff !important;
+}
+
+#components-options-id2::-webkit-scrollbar {
+  width: 12px;
+  background-color: #083c60 !important;
+  visibility: visible !important;
+}
+#components-options-id2::-webkit-scrollbar-track {
+  background-color: #083c60 !important;
+  visibility: visible !important;
+}
+#components-options-id2::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  visibility: visible !important;
+  background-color: #018fd4 !important;
+  box-shadow:inset 6px #fff !important;
+}

@@ -1,0 +1,35 @@
+.qwe-asd {
+  background-color: brown;
+  color: #fff;
+}
+
+html ::-webkit-scrollbar{
+  /* background-color: #000 !important; */
+  visibility: hidden;
+}
+
+html ::-webkit-scrollbar-track  {
+  /* background-color: #ffeabe !important; */
+  visibility: hidden;
+}
+
+html ::-webkit-scrollbar-thumb {
+  /* background-color: #ca7171 !important; */
+  visibility: hidden;
+}
+
+#zxc-vbn::-webkit-scrollbar {
+  width: 20px;
+  background-color: #083c60 !important;
+  visibility: visible !important;
+}
+#zxc-vbn::-webkit-scrollbar-track {
+  background-color: #083c60 !important;
+  visibility: visible !important;
+}
+#zxc-vbn::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  visibility: visible !important;
+  background-color: #018fd4 !important;
+  box-shadow:inset 6px #fff !important;
+}
