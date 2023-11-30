@@ -1,0 +1,58 @@
+{
+  "cache": 1,
+  "code": 200,
+  "msg": "正常",
+  "data": [
+    {
+      "FILE_COUNT": 0,
+      "FILESIZE_COUNT": 0,
+      "PERIOD_DATE": 2023113009
+    },
+    {
+      "FILE_COUNT": 228905,
+      "FILESIZE_COUNT": 99453997882,
+      "PERIOD_DATE": 2023113008
+    },
+    {
+      "FILE_COUNT": 231302,
+      "FILESIZE_COUNT": 95120380035,
+      "PERIOD_DATE": 2023113007
+    },
+    {
+      "FILE_COUNT": 237299,
+      "FILESIZE_COUNT": 92789670985,
+      "PERIOD_DATE": 2023113006
+    },
+    {
+      "FILE_COUNT": 239262,
+      "FILESIZE_COUNT": 94620105341,
+      "PERIOD_DATE": 2023113005
+    },
+    {
+      "FILE_COUNT": 241634,
+      "FILESIZE_COUNT": 93941167828,
+      "PERIOD_DATE": 2023113004
+    },
+    {
+      "FILE_COUNT": 242421,
+      "FILESIZE_COUNT": 96427320773,
+      "PERIOD_DATE": 2023113003
+    },
+    {
+      "FILE_COUNT": 238952,
+      "FILESIZE_COUNT": 90128118411,
+      "PERIOD_DATE": 2023113002
+    },
+    {
+      "FILE_COUNT": 232431,
+      "FILESIZE_COUNT": 85965036789,
+      "PERIOD_DATE": 2023113001
+    },
+    {
+      "FILE_COUNT": 224203,
+      "FILESIZE_COUNT": 92090358186,
+      "PERIOD_DATE": 2023113000
+    }
+  ],
+  "total": 10
+}

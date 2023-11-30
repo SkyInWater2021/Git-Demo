@@ -1,0 +1,323 @@
+{
+  "cache": 1,
+  "code": 200,
+  "msg": "正常",
+  "data": [
+    {
+      "USER_ID": "nsmc",
+      "USER_ID_NAME": "卫星中心",
+      "FILE_COUNT": 43119,
+      "FILESIZE_COUNT": 985152196159,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "nmcin",
+      "USER_ID_NAME": "气象中心",
+      "FILE_COUNT": 5889,
+      "FILESIZE_COUNT": 358791432653,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "nmicin",
+      "USER_ID_NAME": "信息中心部际系统",
+      "FILE_COUNT": 57721,
+      "FILESIZE_COUNT": 298380241910,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "behz",
+      "USER_ID_NAME": "浙江",
+      "FILE_COUNT": 396401,
+      "FILESIZE_COUNT": 169070694723,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "nmiczls",
+      "USER_ID_NAME": "信息中心资料室",
+      "FILE_COUNT": 20890,
+      "FILESIZE_COUNT": 167479754888,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bcuq",
+      "USER_ID_NAME": "新疆",
+      "FILE_COUNT": 386183,
+      "FILESIZE_COUNT": 115690906346,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "benj",
+      "USER_ID_NAME": "江苏",
+      "FILE_COUNT": 187737,
+      "FILESIZE_COUNT": 85440846869,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bccd",
+      "USER_ID_NAME": "四川",
+      "FILE_COUNT": 290318,
+      "FILESIZE_COUNT": 83888056756,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "benc",
+      "USER_ID_NAME": "江西",
+      "FILE_COUNT": 166163,
+      "FILESIZE_COUNT": 80523751159,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "gtsin",
+      "USER_ID_NAME": "GTS",
+      "FILE_COUNT": 443266,
+      "FILESIZE_COUNT": 72983646943,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bexa",
+      "USER_ID_NAME": "陕西",
+      "FILE_COUNT": 181820,
+      "FILESIZE_COUNT": 59965722650,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bepk",
+      "USER_ID_NAME": "北京",
+      "FILE_COUNT": 155897,
+      "FILESIZE_COUNT": 57734882777,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bcgz",
+      "USER_ID_NAME": "广东",
+      "FILE_COUNT": 199813,
+      "FILESIZE_COUNT": 53137371921,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "besz",
+      "USER_ID_NAME": "河北",
+      "FILE_COUNT": 117130,
+      "FILESIZE_COUNT": 50368303738,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bekm",
+      "USER_ID_NAME": "云南",
+      "FILE_COUNT": 189325,
+      "FILESIZE_COUNT": 49481849736,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "behb",
+      "USER_ID_NAME": "黑龙江",
+      "FILE_COUNT": 166733,
+      "FILESIZE_COUNT": 47598899183,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bexn",
+      "USER_ID_NAME": "青海",
+      "FILE_COUNT": 177590,
+      "FILESIZE_COUNT": 45660913979,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bezz",
+      "USER_ID_NAME": "河南",
+      "FILE_COUNT": 125000,
+      "FILESIZE_COUNT": 45502436673,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "beht",
+      "USER_ID_NAME": "内蒙",
+      "FILE_COUNT": 174463,
+      "FILESIZE_COUNT": 40320686708,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "becc",
+      "USER_ID_NAME": "吉林",
+      "FILE_COUNT": 104091,
+      "FILESIZE_COUNT": 37200497680,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bejn",
+      "USER_ID_NAME": "山东",
+      "FILE_COUNT": 104719,
+      "FILESIZE_COUNT": 36716279997,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "befz",
+      "USER_ID_NAME": "福建",
+      "FILE_COUNT": 157055,
+      "FILESIZE_COUNT": 35924940805,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bclz",
+      "USER_ID_NAME": "bclz",
+      "FILE_COUNT": 217542,
+      "FILESIZE_COUNT": 34112503379,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bety",
+      "USER_ID_NAME": "山西",
+      "FILE_COUNT": 98007,
+      "FILESIZE_COUNT": 33238447595,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bels",
+      "USER_ID_NAME": "西藏",
+      "FILE_COUNT": 137229,
+      "FILESIZE_COUNT": 32381768293,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "begy",
+      "USER_ID_NAME": "贵州",
+      "FILE_COUNT": 199987,
+      "FILESIZE_COUNT": 31590805009,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "benn",
+      "USER_ID_NAME": "广西",
+      "FILE_COUNT": 88814,
+      "FILESIZE_COUNT": 31376074783,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bcsy",
+      "USER_ID_NAME": "辽宁",
+      "FILE_COUNT": 116428,
+      "FILESIZE_COUNT": 30306717705,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "behf",
+      "USER_ID_NAME": "安徽",
+      "FILE_COUNT": 85128,
+      "FILESIZE_COUNT": 28204946058,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bcsh",
+      "USER_ID_NAME": "上海",
+      "FILE_COUNT": 66093,
+      "FILESIZE_COUNT": 26662086593,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "bcwh",
+      "USER_ID_NAME": "湖北",
+      "FILE_COUNT": 95619,
+      "FILESIZE_COUNT": 25147658121,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "betj",
+      "USER_ID_NAME": "天津",
+      "FILE_COUNT": 62124,
+      "FILESIZE_COUNT": 24374598111,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "becs",
+      "USER_ID_NAME": "湖南",
+      "FILE_COUNT": 64931,
+      "FILESIZE_COUNT": 22090563845,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "becq",
+      "USER_ID_NAME": "重庆",
+      "FILE_COUNT": 77737,
+      "FILESIZE_COUNT": 14292056604,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "mocin",
+      "USER_ID_NAME": "探测中心",
+      "FILE_COUNT": 85,
+      "FILESIZE_COUNT": 11609864352,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "beyc",
+      "USER_ID_NAME": "宁夏",
+      "FILE_COUNT": 28811,
+      "FILESIZE_COUNT": 9785883481,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "behk",
+      "USER_ID_NAME": "海南",
+      "FILE_COUNT": 34191,
+      "FILESIZE_COUNT": 6420220241,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "nmictcfw",
+      "USER_ID_NAME": "信息中心部际系统",
+      "FILE_COUNT": 40,
+      "FILESIZE_COUNT": 50066072,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "nmscin",
+      "USER_ID_NAME": "卫星中心",
+      "FILE_COUNT": 260,
+      "FILESIZE_COUNT": 46931857,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "tczxin",
+      "USER_ID_NAME": "探测中心",
+      "FILE_COUNT": 54195,
+      "FILESIZE_COUNT": 13749133,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "pmscin",
+      "USER_ID_NAME": "公共气象服务中心",
+      "FILE_COUNT": 181,
+      "FILESIZE_COUNT": 2140117,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "camsin",
+      "USER_ID_NAME": "气科院",
+      "FILE_COUNT": 1718,
+      "FILESIZE_COUNT": 0,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "cmadaasin",
+      "USER_ID_NAME": "信息中心天擎",
+      "FILE_COUNT": 652875,
+      "FILESIZE_COUNT": 0,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "cmatcin",
+      "USER_ID_NAME": "干部培训学院",
+      "FILE_COUNT": 5755,
+      "FILESIZE_COUNT": 0,
+      "PERIOD_DATE": 20231129
+    },
+    {
+      "USER_ID": "wmcin",
+      "USER_ID_NAME": "人工影响天气中心",
+      "FILE_COUNT": 165,
+      "FILESIZE_COUNT": 0,
+      "PERIOD_DATE": 20231129
+    }
+  ],
+  "total": 45
+}

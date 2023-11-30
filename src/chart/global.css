@@ -1,34 +1,34 @@
+.custom-cpn__wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
 .total-current {
   display: flex;
-  font-size: 30px;
-  font-weight: 600;
-  height: 40px;
+  font-size: 24px;
+  font-weight: 500;
+  height: 27px;
   color: white;
 }
 .total-current .total-chart {
   display: flex;
-  align-items: center;
 }
 .total-current .total-chart .total-chart__item {
-  width: 2rem;
-  height: 100%;
+  width: 20px;
   text-align: center;
+  line-height: 28px;
   margin-right: 2px;
-  background-image: linear-gradient(
-    #123f6f calc(50% - 1px),
-    transparent 2px,
-    #123f6f calc(50% + 1px)
-  );
+  background: url(../imgs/number-bg.png) no-repeat;
+  background-size: 100% 100%;
 }
 .total-wave {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 120px;
-  height: 100%;
-  margin-left: 8px;
-  box-shadow: inset 0 0 10px 1px currentColor, 0 0 2px 1px currentColor;
+  margin-left: 6px;
+  font-size: 12px;
+  box-shadow: inset 0 0 4px 1px currentColor;
 }
 .total-wave__up {
   color: #5cc78f;
@@ -36,26 +36,22 @@
 .total-wave__down {
   color: #db6e66;
 }
-.total-wave__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 4px;
-  font-size: 0.8em;
-}
 
 /* 柱状图 */
 .bar-wrapper {
   width: 100%;
-  height: 35px;
+  height: 12px;
+  margin: 10px 0;
 }
 
 .average-container {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 14px;
   color: white;
 }
 .average-container img {
   margin-right: 6px;
+  width: 12px;
+  height: 12px;
 }

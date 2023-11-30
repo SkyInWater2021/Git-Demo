@@ -1,4 +1,4 @@
-import fetchData from './fetchData.json'
+import defaultData from './defaultData.json'
 
 export const dataKeyMap = {
   total: 'FILESIZE_COUNT',
@@ -7,10 +7,10 @@ export const dataKeyMap = {
 }
 
 // 处理数据
-export function handleData(data = fetchData, config = dataKeyMap) {
+export function handleData(data = defaultData, config = dataKeyMap) {
   let total = 0 // 总量
   let average = 0 // 平均量
-  let wavePercentage = '2' // 波动百分比
+  let wavePercentage = '0' // 波动百分比
 
   const totalKey = config.total
   const averageKey = config.average
@@ -23,7 +23,10 @@ export function handleData(data = fetchData, config = dataKeyMap) {
 
     total = formatNumberAsGigabytes(totalNumber)
     average = formatNumberAsGigabytes(averageNumber)
-    wavePercentage = ((totalNumber / averageNumber) * 100).toFixed(1)
+    wavePercentage = (
+      ((totalNumber - averageNumber) / averageNumber) *
+      100
+    ).toFixed(1)
   }
 
   return {
@@ -34,32 +37,29 @@ export function handleData(data = fetchData, config = dataKeyMap) {
   }
 }
 
-export default function () {
-  return function (data, config = {}, map = {}) {
-    return handleData(data, config)
-  }
-}
-
 export function formatNumberAsGigabytes(number) {
-  // 检查输入是否为数字
   if (typeof number !== 'number') {
     throw new Error('Input must be a number')
   }
 
-  // 检查输入是否为正数
   if (number < 0) {
     throw new Error('Input must be a non-negative number')
   }
 
-  // 定义G的单位值
   const gigabyte = 1e9 // 1 G = 10^9
 
-  // 计算数字除以G的值
   const result = number / gigabyte
 
-  // 使用toFixed方法将结果格式化为字符串，保留两位小数
-  const formattedResult = result.toFixed(3)
+  const positiveLength = String(result).split('.')[0].length
+  const fixedLength = 6 - positiveLength
 
-  // 返回带有"G"单位的字符串
+  const formattedResult = result.toFixed(fixedLength < 0 ? 0 : fixedLength)
+
   return `${formattedResult}G`
+}
+
+export default function () {
+  return function (data, config = {}, map = {}) {
+    return handleData(data, config)
+  }
 }
