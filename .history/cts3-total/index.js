@@ -1,6 +1,6 @@
 import setBasic, { config, dataConfig } from './themes/basic'
 
-export const name = 'ctsLiveBar'
+export const name = 'ctsCompare'
 
 export const styleSetGenerators = { basic: config }
 export const dataConfigGenerators = { basic: dataConfig }

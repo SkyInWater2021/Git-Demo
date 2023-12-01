@@ -1,8 +1,8 @@
 export function setBasicNav(intl) {
   return {
     title: intl.formatMessage({
-      id: 'cts3-live-bar',
-      defaultMessage: 'cts3实时传输情况'
+      id: 'cts3-bubble',
+      defaultMessage: 'cts3气泡图'
     }),
     isPlugin: true,
     navCategory: 'charts.themes.multiChart',

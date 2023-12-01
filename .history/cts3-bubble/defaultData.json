@@ -1,0 +1,253 @@
+{
+  "DATA_TYPE_FIRST": {
+    "name": {
+      "code": "DATA_TYPE_FIRST",
+      "name": "DATA_TYPE_FIRST",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      "F",
+      "K",
+      "J",
+      "A",
+      "B",
+      "T",
+      "Z",
+      "G",
+      "N",
+      "M",
+      "C",
+      "E",
+      "D"
+    ]
+  },
+  "PERIOD_DATE": {
+    "name": {
+      "code": "PERIOD_DATE",
+      "name": "PERIOD_DATE",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      20231127,
+      20231127,
+      20231127,
+      20231127,
+      20231127,
+      20231127,
+      20231127,
+      20231127,
+      20231127,
+      20231127,
+      20231127,
+      20231127,
+      20231127
+    ]
+  },
+  "DATA_TYPE_FIRST_NAME": {
+    "name": {
+      "code": "DATA_TYPE_FIRST_NAME",
+      "name": "DATA_TYPE_FIRST_NAME",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      "数值预报",
+      "卫星",
+      "雷达",
+      "地面",
+      "高空",
+      "T",
+      "其他",
+      "大气成分",
+      "空间天气",
+      "服务",
+      "海洋",
+      "农气",
+      "辐射"
+    ]
+  },
+  "detail": {
+    "name": {
+      "code": "detail",
+      "name": "detail",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "数据归档_new",
+        "FILESIZE_COUNT": 1925936477274,
+        "FILE_COUNT": 61910
+      },
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "数据归档_new",
+        "FILESIZE_COUNT": 1450871162129,
+        "FILE_COUNT": 161354
+      },
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "CMADAAS_DPC_B",
+        "FILESIZE_COUNT": 1370525510474,
+        "FILE_COUNT": 3509987
+      },
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "CMADAAS_DPC_A",
+        "FILESIZE_COUNT": 2271143651150,
+        "FILE_COUNT": 5163952
+      },
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "CMADAAS_DPC_B",
+        "FILESIZE_COUNT": 167124165529,
+        "FILE_COUNT": 1307109
+      },
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "数据归档_new",
+        "FILESIZE_COUNT": 85774000517,
+        "FILE_COUNT": 58004
+      },
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "数据归档_new",
+        "FILESIZE_COUNT": 89630373563,
+        "FILE_COUNT": 62908
+      },
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "CMADAAS_DPC_B",
+        "FILESIZE_COUNT": 11884559432,
+        "FILE_COUNT": 204171
+      },
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "数据归档_new",
+        "FILESIZE_COUNT": 7737117326,
+        "FILE_COUNT": 460
+      },
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "XiaZaiPingTai_ftp_cts",
+        "FILESIZE_COUNT": 4665458600,
+        "FILE_COUNT": 1095
+      },
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "CMADAAS_DPC_A",
+        "FILESIZE_COUNT": 2884096755,
+        "FILE_COUNT": 76712
+      },
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "CMADAAS_DPC_A",
+        "FILESIZE_COUNT": 4449483879,
+        "FILE_COUNT": 216887
+      },
+      {
+        "USER_ID_NAME": "信息中心",
+        "USER_ID": "数据归档_new",
+        "FILESIZE_COUNT": 172188124,
+        "FILE_COUNT": 94826
+      }
+    ]
+  },
+  "FILESIZE_COUNT": {
+    "name": {
+      "code": "FILESIZE_COUNT",
+      "name": "FILESIZE_COUNT",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      9878587830107,
+      6798008002035,
+      5743963975119,
+      3735491072181,
+      650721154009,
+      646021854963,
+      334007346191,
+      29475126782,
+      15474234652,
+      12919418362,
+      9094030941,
+      7745072192,
+      262346966
+    ]
+  },
+  "FILE_COUNT": {
+    "name": {
+      "code": "FILE_COUNT",
+      "name": "FILE_COUNT",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      658067,
+      1304271,
+      12564602,
+      12323209,
+      4038836,
+      401682,
+      202781,
+      560774,
+      920,
+      37908,
+      115655,
+      451626,
+      144449
+    ]
+  }
+}

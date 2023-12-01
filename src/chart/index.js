@@ -9,10 +9,18 @@ export const Chart = function (Base) {
       this.el = el
       this.chartInstance = null
 
-      this.chartId = Date.now()
-
       this.parserData = handleData()
-      this.gravity = 0.15
+    }
+
+    randomString(len) {
+      const chars =
+        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890'
+      const maxPos = chars.length
+      let str = ''
+      for (let i = 0; i < len; i++) {
+        str += chars.charAt(Math.floor(Math.random() * maxPos))
+      }
+      return str
     }
 
     setData(data) {
@@ -22,33 +30,132 @@ export const Chart = function (Base) {
 
     getChartOption() {
       const option = {
-        grid: { left: 0, right: 0, top: 0, bottom: 50 },
+        tooltip: {
+          trigger: 'item'
+        },
+        grid: { left: '10%', right: '10%', bottom: 20, top: 40 },
         legend: [
           {
-            data: this.parserData.legendData,
-            textStyle: { color: 'white' },
-            bottom: 10,
-            icon: 'circle'
+            data: ['收集个数', '分发个数', '收集文件量', '分发文件量'],
+            top: 0,
+            itemWidth: 24,
+            itemHeight: 12,
+            textStyle: {
+              fontSize: 12,
+              color: 'white'
+            }
           }
         ],
+
+        xAxis: [
+          {
+            type: 'category',
+            axisPointer: { type: 'shadow' },
+            axisLabel: { color: 'white' },
+            data: this.parserData.xAxisData.map((item) => {
+              const str = String(item)
+              return str.slice(str.length - 2)
+            }),
+            axisTick: { show: false },
+            axisLine: {
+              lineStyle: {
+                color: '#3e7fce'
+              }
+            }
+          }
+        ],
+        yAxis: [
+          {
+            type: 'value',
+            name: '单位(G)',
+            nameTextStyle: {
+              color: '#6DB5D7'
+            },
+            axisTick: { show: false },
+            axisLabel: { color: '#6DB5D7' },
+            axisLine: { lineStyle: { color: '#6DB5D7' } },
+            splitLine: { show: true, lineStyle: { color: '#6DB5D7' } }
+          },
+          {
+            type: 'value',
+            unit: 'G',
+            axisTick: { show: false },
+            axisLabel: { color: '#6DB5D7' },
+            axisLine: { lineStyle: { color: '#6DB5D7' } },
+            splitLine: { show: true, lineStyle: { color: '#6DB5D7' } }
+          }
+        ],
+
         series: [
           {
-            name: 'bubble',
-            type: 'graph',
-            layout: 'force',
-            draggable: true,
-            roam: true,
-            label: { show: false, color: 'white', fontSize: 12 },
-            labelLayout: { align: 'center', moveOverlap: true, fontSize: 22 },
-            data: this.parserData.seriesData,
-            categories: this.parserData.categoryData,
-            emphasis: {
-              label: { align: 'center', show: true }
+            name: '收集个数',
+            type: 'bar',
+            data: this.parserData.collectionData,
+            barGap: 1,
+            barWidth: '10px',
+            showBackground: true,
+            backgroundStyle: { opacity: 0.5 },
+            label: {
+              show: true,
+              position: 'outside',
+              distance: 0,
+              fontSize: 4,
+              color: 'rgba(0,0,0,0)',
+              backgroundColor: '#d9f4f5',
+              shadowBlur: 6,
+              shadowColor: 'white'
             },
-            force: {
-              repulsion: 50,
-              gravity: this.gravity
+            itemStyle: {
+              color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [
+                { offset: 0, color: '#3f8bf4' },
+                { offset: 0.5, color: '#3f8bf4' },
+                { offset: 1, color: '#84e2fb' }
+              ]),
+              shadowColor: 'white',
+              shadowBlur: 1
             }
+          },
+          {
+            name: '分发个数',
+            type: 'bar',
+            data: this.parserData.distributeData,
+            barWidth: '10px',
+            barGap: 1,
+            showBackground: true,
+            backgroundStyle: { opacity: 0.5 },
+            label: {
+              show: true,
+              position: 'outside',
+              distance: 0,
+              fontSize: 4,
+              color: 'rgba(0,0,0,0)',
+              backgroundColor: '#d9f4f5',
+              shadowBlur: 6,
+              shadowColor: 'white'
+            },
+            itemStyle: {
+              color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [
+                { offset: 0, color: '#4fad89' },
+                { offset: 0.5, color: '#4fad89' },
+                { offset: 1, color: '#93fbf8' }
+              ])
+            }
+          },
+          {
+            name: '收集文件量',
+            type: 'line',
+            symbol: 'none',
+            yAxisIndex: 1,
+            data: this.parserData.downCollectionData,
+            itemStyle: { color: '#5397c5' }
+          },
+          {
+            name: '分发文件量',
+            type: 'line',
+            symbol: 'none',
+            yAxisIndex: 1,
+            itemStyle: { color: '#e4cb5d' },
+            data: this.downloadDistributeData
           }
         ]
       }
@@ -57,10 +164,11 @@ export const Chart = function (Base) {
     }
 
     renderChart() {
-      const container = `<div id="${this.BAR_ID}" class="chart-container"></div>`
+      const id = this.randomString(10) + 'cts3_live_bar'
+      const container = `<div id="${id}" class="chart-container"></div>`
 
       const timer = setInterval(() => {
-        const el = document.getElementById(this.BAR_ID)
+        const el = document.getElementById(id)
         if (el) {
           clearInterval(timer)
           el.removeAttribute('_echarts_instance_')
@@ -92,14 +200,7 @@ export const Chart = function (Base) {
 
     setOption() {}
 
-    setSeriesStyle(__seriesStyle) {
-      const { size, gravity } = __seriesStyle
-      this.gravity = gravity
-
-      this.parserData.seriesData.forEach((item) => {
-        item.symbolSize = item.symbolSize * size
-      })
-    }
+    setSeriesStyle(__seriesStyle) {}
 
     destroy() {}
   }

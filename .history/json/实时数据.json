@@ -1,0 +1,128 @@
+{
+  "cache": 1,
+  "code": 200,
+  "msg": "正常",
+  "data": [
+    {
+      "FILE_COUNT": 225234,
+      "FILESIZE_COUNT": 88336512865,
+      "PERIOD_DATE": 2023120106,
+      "PROCESS_LINK": 9
+    },
+    {
+      "FILE_COUNT": 223850,
+      "FILESIZE_COUNT": 82967753162,
+      "PERIOD_DATE": 2023120105,
+      "PROCESS_LINK": 9
+    },
+    {
+      "FILE_COUNT": 220378,
+      "FILESIZE_COUNT": 83094171111,
+      "PERIOD_DATE": 2023120104,
+      "PROCESS_LINK": 9
+    },
+    {
+      "FILE_COUNT": 223162,
+      "FILESIZE_COUNT": 89491940136,
+      "PERIOD_DATE": 2023120103,
+      "PROCESS_LINK": 9
+    },
+    {
+      "FILE_COUNT": 220055,
+      "FILESIZE_COUNT": 77874511568,
+      "PERIOD_DATE": 2023120102,
+      "PROCESS_LINK": 9
+    },
+    {
+      "FILE_COUNT": 208851,
+      "FILESIZE_COUNT": 80838871006,
+      "PERIOD_DATE": 2023120101,
+      "PROCESS_LINK": 9
+    },
+    {
+      "FILE_COUNT": 211990,
+      "FILESIZE_COUNT": 104880913587,
+      "PERIOD_DATE": 2023120100,
+      "PROCESS_LINK": 9
+    },
+    {
+      "FILE_COUNT": 215891,
+      "FILESIZE_COUNT": 78269445074,
+      "PERIOD_DATE": 2023113023,
+      "PROCESS_LINK": 9
+    },
+    {
+      "FILE_COUNT": 214173,
+      "FILESIZE_COUNT": 86714211489,
+      "PERIOD_DATE": 2023113022,
+      "PROCESS_LINK": 9
+    },
+    {
+      "FILE_COUNT": 218189,
+      "FILESIZE_COUNT": 87055737969,
+      "PERIOD_DATE": 2023113021,
+      "PROCESS_LINK": 9
+    },
+    {
+      "FILE_COUNT": 1247167,
+      "FILESIZE_COUNT": 670561627306,
+      "PERIOD_DATE": 2023120106,
+      "PROCESS_LINK": 3
+    },
+    {
+      "FILE_COUNT": 1239514,
+      "FILESIZE_COUNT": 645982997933,
+      "PERIOD_DATE": 2023120105,
+      "PROCESS_LINK": 3
+    },
+    {
+      "FILE_COUNT": 1214444,
+      "FILESIZE_COUNT": 645883019784,
+      "PERIOD_DATE": 2023120104,
+      "PROCESS_LINK": 3
+    },
+    {
+      "FILE_COUNT": 1235104,
+      "FILESIZE_COUNT": 675510132439,
+      "PERIOD_DATE": 2023120103,
+      "PROCESS_LINK": 3
+    },
+    {
+      "FILE_COUNT": 1221175,
+      "FILESIZE_COUNT": 620603123357,
+      "PERIOD_DATE": 2023120102,
+      "PROCESS_LINK": 3
+    },
+    {
+      "FILE_COUNT": 1186266,
+      "FILESIZE_COUNT": 634134203758,
+      "PERIOD_DATE": 2023120101,
+      "PROCESS_LINK": 3
+    },
+    {
+      "FILE_COUNT": 1625577,
+      "FILESIZE_COUNT": 4710231123321,
+      "PERIOD_DATE": 2023120100,
+      "PROCESS_LINK": 3
+    },
+    {
+      "FILE_COUNT": 1173826,
+      "FILESIZE_COUNT": 567409654884,
+      "PERIOD_DATE": 2023113023,
+      "PROCESS_LINK": 3
+    },
+    {
+      "FILE_COUNT": 1169366,
+      "FILESIZE_COUNT": 591965499413,
+      "PERIOD_DATE": 2023113022,
+      "PROCESS_LINK": 3
+    },
+    {
+      "FILE_COUNT": 1193372,
+      "FILESIZE_COUNT": 602725092069,
+      "PERIOD_DATE": 2023113021,
+      "PROCESS_LINK": 3
+    }
+  ],
+  "total": 20
+}

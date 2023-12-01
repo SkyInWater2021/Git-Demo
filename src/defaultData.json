@@ -1,233 +1,90 @@
 {
-  "detail": {
-    "name": {},
+  "PROCESS_LINK": {
+    "name": {
+      "code": "PROCESS_LINK",
+      "name": "PROCESS_LINK",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
     "data": [
-      [
-        {
-          "USER_ID": "数据归档_new",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 62060,
-          "FILESIZE_COUNT": 1968348915175
-        },
-        {
-          "USER_ID": "CMADAAS_DPC_B",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 128959,
-          "FILESIZE_COUNT": 1955790008635
-        },
-        {
-          "USER_ID": "XiaZaiPingTai_ftp_cts",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 69728,
-          "FILESIZE_COUNT": 1519685684691
-        },
-        {
-          "USER_ID": "tcfw_service",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 4525,
-          "FILESIZE_COUNT": 467930467762
-        },
-        {
-          "USER_ID": "kjcs_nas",
-          "USER_ID_NAME": "kjcs_nas",
-          "FILE_COUNT": 306,
-          "FILESIZE_COUNT": 411141689142
-        },
-        {
-          "USER_ID": "kjcs_DMZ",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 4118,
-          "FILESIZE_COUNT": 408154742584
-        },
-        {
-          "USER_ID": "CMADAAS_NAS",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 59620,
-          "FILESIZE_COUNT": 343393734098
-        },
-        {
-          "USER_ID": "tcfw_babj",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 52276,
-          "FILESIZE_COUNT": 323382840369
-        },
-        {
-          "USER_ID": "下载平台_gd_cts",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 24803,
-          "FILESIZE_COUNT": 293936463444
-        },
-        {
-          "USER_ID": "kjcs_cts",
-          "USER_ID_NAME": "kjcs_cts",
-          "FILE_COUNT": 50601,
-          "FILESIZE_COUNT": 244719107251
-        }
-      ],
-      [
-        {
-          "USER_ID": "数据归档_new",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 62060,
-          "FILESIZE_COUNT": 1968348915175
-        },
-        {
-          "USER_ID": "CMADAAS_DPC_B",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 128959,
-          "FILESIZE_COUNT": 1955790008635
-        },
-        {
-          "USER_ID": "XiaZaiPingTai_ftp_cts",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 69728,
-          "FILESIZE_COUNT": 1519685684691
-        },
-        {
-          "USER_ID": "tcfw_service",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 4525,
-          "FILESIZE_COUNT": 467930467762
-        },
-        {
-          "USER_ID": "kjcs_nas",
-          "USER_ID_NAME": "kjcs_nas",
-          "FILE_COUNT": 306,
-          "FILESIZE_COUNT": 411141689142
-        },
-        {
-          "USER_ID": "kjcs_DMZ",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 4118,
-          "FILESIZE_COUNT": 408154742584
-        },
-        {
-          "USER_ID": "CMADAAS_NAS",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 59620,
-          "FILESIZE_COUNT": 343393734098
-        },
-        {
-          "USER_ID": "tcfw_babj",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 52276,
-          "FILESIZE_COUNT": 323382840369
-        },
-        {
-          "USER_ID": "下载平台_gd_cts",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 24803,
-          "FILESIZE_COUNT": 293936463444
-        },
-        {
-          "USER_ID": "kjcs_cts",
-          "USER_ID_NAME": "kjcs_cts",
-          "FILE_COUNT": 50601,
-          "FILESIZE_COUNT": 244719107251
-        }
-      ],
-      [
-        {
-          "USER_ID": "数据归档_new",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 62060,
-          "FILESIZE_COUNT": 1968348915175
-        },
-        {
-          "USER_ID": "CMADAAS_DPC_B",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 128959,
-          "FILESIZE_COUNT": 1955790008635
-        },
-        {
-          "USER_ID": "XiaZaiPingTai_ftp_cts",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 69728,
-          "FILESIZE_COUNT": 1519685684691
-        },
-        {
-          "USER_ID": "tcfw_service",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 4525,
-          "FILESIZE_COUNT": 467930467762
-        },
-        {
-          "USER_ID": "kjcs_nas",
-          "USER_ID_NAME": "kjcs_nas",
-          "FILE_COUNT": 306,
-          "FILESIZE_COUNT": 411141689142
-        },
-        {
-          "USER_ID": "kjcs_DMZ",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 4118,
-          "FILESIZE_COUNT": 408154742584
-        },
-        {
-          "USER_ID": "CMADAAS_NAS",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 59620,
-          "FILESIZE_COUNT": 343393734098
-        },
-        {
-          "USER_ID": "tcfw_babj",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 52276,
-          "FILESIZE_COUNT": 323382840369
-        },
-        {
-          "USER_ID": "下载平台_gd_cts",
-          "USER_ID_NAME": "信息中心",
-          "FILE_COUNT": 24803,
-          "FILESIZE_COUNT": 293936463444
-        },
-        {
-          "USER_ID": "kjcs_cts",
-          "USER_ID_NAME": "kjcs_cts",
-          "FILE_COUNT": 50601,
-          "FILESIZE_COUNT": 244719107251
-        }
-      ]
+      9,
+      9,
+      3,
+      3
     ]
   },
   "PERIOD_DATE": {
-    "name": {},
+    "name": {
+      "code": "PERIOD_DATE",
+      "name": "PERIOD_DATE",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
     "data": [
-      20231129,
-      20231129,
-      20231129
-    ]
-  },
-  "DATA_TYPE_FIRST": {
-    "name": {},
-    "data": [
-      "F",
-      "D",
-      "E"
-    ]
-  },
-  "DATA_TYPE_FIRST_NAME": {
-    "name": {},
-    "data": [
-      "数值预报1",
-      "数值预报2",
-      "数值预报3"
-    ]
-  },
-  "FILE_COUNT": {
-    "name": {},
-    "data": [
-      662670,
-      662670,
-      662670
+      2023120106,
+      2023120105,
+      2023120104,
+      2023120103
     ]
   },
   "FILESIZE_COUNT": {
-    "name": {},
+    "name": {
+      "code": "FILESIZE_COUNT",
+      "name": "FILESIZE_COUNT",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
     "data": [
-      10029536484459,
-      10029536484459,
-      10029536484459
+      88336512865,
+      82967753162,
+      83094171111,
+      89491940136
+    ]
+  },
+  "FILE_COUNT": {
+    "name": {
+      "code": "FILE_COUNT",
+      "name": "FILE_COUNT",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      225234,
+      223850,
+      220378,
+      223162
     ]
   }
 }

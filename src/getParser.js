@@ -1,88 +1,52 @@
-import echarts from 'echarts'
+import { uniq } from 'lodash'
 import defaultData from './defaultData.json'
 
 export const dataKeyMap = {
-  detail: 'detail',
-  periodId: 'PERIOD_DATE',
-  first: 'DATA_TYPE_FIRST',
-  firstName: 'DATA_TYPE_FIRST_NAME',
   fileCount: 'FILE_COUNT',
-  fileSizeCount: 'FILESIZE_COUNT'
+  fileSizeCount: 'FILESIZE_COUNT',
+  date: 'PERIOD_DATE',
+  link: 'PROCESS_LINK'
 }
-
-export const colors = [
-  '#9eca7f',
-  '#f2ca6b',
-  '#9263af',
-  '#de6e6a',
-  '#5a6fc0',
-  '#ec8a5d',
-  '#e889d4',
-  '#255a92',
-  '#9fc3fb',
-  '#97a3b6',
-  '#52b3d0',
-  '#62baf3',
-  '#838cf1',
-  '#da7ff2',
-  '#ea7987'
-]
 
 // 处理数据
 export function handleData(data = defaultData, config = dataKeyMap) {
-  const detailKey = config.detail
-  const filenameKey = config.firstName
+  const dateKey = 'PERIOD_DATE'
+  const fileCountKey = 'FILE_COUNT'
+  const fileSizeCountKey = 'FILESIZE_COUNT'
+  const linkKey = 'PROCESS_LINK'
 
-  const legendData = data[filenameKey].data
-  const seriesData = []
-  const categoryData = []
-  data[filenameKey].data.forEach((name, index) => {
-    // TODO JSON.parse()
-    const detailsData = data[detailKey].data[index]
+  const xAxisData = uniq(data[dateKey].data).reverse()
 
-    const mainColor = colors[index % 15]
-    const color = new echarts.graphic.RadialGradient(0.5, 0.5, 0.5, [
-      { offset: 1, color: `${mainColor}` },
-      { offset: 0.7, color: `${mainColor}99` },
-      { offset: 0, color: `${mainColor}55` }
-    ])
+  const collectionData = []
+  const downCollectionData = []
+  const distributeData = []
+  const downloadDistributeData = []
 
-    categoryData.push({
-      name: name,
-      itemStyle: {
-        color: color
-      }
-    })
+  data[linkKey].data.forEach((link, index) => {
+    if (link === 3) {
+      distributeData.push(
+        formatNumberAsGigabytes(data[fileSizeCountKey].data[index])
+      )
+    }
 
-    detailsData.forEach((detail) => {
-      const size = detail['FILE_COUNT'] / data[dataKeyMap.fileCount].data[index]
+    if (link === 9) {
+      collectionData.push(
+        formatNumberAsGigabytes(data[fileSizeCountKey].data[index])
+      )
+      downCollectionData.push(data[fileCountKey].data[index])
+    }
 
-      seriesData.push({
-        id: `${name}_${detail['USER_ID']}`,
-        name: detail['USER_ID_NAME'],
-        symbolSize: size,
-        value: detail['FILE_COUNT'],
-        category: index,
-        itemStyle: { color: color },
-        label: {
-          show: size > 0.1,
-          color: 'white',
-          fontSize: 12
-        },
-        emphasis: {
-          label: { align: 'center', show: true }
-        }
-      })
-    })
+    if (link === 10) {
+      downloadDistributeData.push(data[fileCountKey].data[index])
+    }
   })
 
-  const linksData = []
-
   return {
-    legendData,
-    seriesData,
-    categoryData,
-    linksData
+    xAxisData,
+    collectionData,
+    downCollectionData,
+    distributeData,
+    downloadDistributeData
   }
 }
 
@@ -90,4 +54,25 @@ export default function () {
   return function (data, config = {}, map = {}) {
     return handleData(data, config)
   }
+}
+
+export function formatNumberAsGigabytes(number) {
+  if (typeof number !== 'number') {
+    throw new Error('Input must be a number')
+  }
+
+  if (number < 0) {
+    throw new Error('Input must be a non-negative number')
+  }
+
+  const gigabyte = 1e9 // 1 G = 10^9
+
+  const result = number / gigabyte
+
+  const positiveLength = String(result).split('.')[0].length
+  const fixedLength = 6 - positiveLength
+
+  const formattedResult = result.toFixed(fixedLength < 0 ? 0 : fixedLength)
+
+  return Number(formattedResult)
 }

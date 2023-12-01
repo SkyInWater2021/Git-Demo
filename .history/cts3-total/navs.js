@@ -1,8 +1,8 @@
 export function setBasicNav(intl) {
   return {
     title: intl.formatMessage({
-      id: 'cts3-live-bar',
-      defaultMessage: 'cts3实时传输情况'
+      id: 'ctsCompare',
+      defaultMessage: '昨日总量'
     }),
     isPlugin: true,
     navCategory: 'charts.themes.multiChart',
