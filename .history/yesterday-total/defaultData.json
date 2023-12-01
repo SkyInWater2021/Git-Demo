@@ -1,0 +1,76 @@
+{
+  "FILESIZE_COUNT": {
+    "name": {
+      "code": "FILESIZE_COUNT",
+      "name": "FILESIZE_COUNT",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      3324845265388,
+      229083597,
+      2306574,
+      15410569574,
+      255971328,
+      56704054458,
+      46749198262,
+      337296168977,
+      154165071,
+      4419974,
+      330086178
+    ]
+  },
+  "FILESIZE_AVG": {
+    "name": {
+      "code": "FILESIZE_AVG",
+      "name": "FILESIZE_AVG",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      4651978319610,
+      300241828,
+      16966190,
+      17202834764,
+      654784487,
+      147085918338,
+      117406067169,
+      331183870985,
+      145723296,
+      4771979,
+      410436225
+    ]
+  },
+  "DATA_TYPE": {
+    "name": "DATA_TYPE",
+    "data": [
+      null,
+      "F.0044.0005.R002",
+      "F.0044.0005.R004",
+      "B.0005.0004.R001",
+      "J.0003.0005.R004",
+      "J.0003.0021.R004",
+      "J.0003.0007.R004",
+      "A.0001.0055.R001",
+      "A.0001.0049.R001",
+      "G.0002.0008.R001",
+      "F.0044.0005.R003"
+    ]
+  }
+}

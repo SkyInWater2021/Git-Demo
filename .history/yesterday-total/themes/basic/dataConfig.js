@@ -1,17 +1,17 @@
 export default function () {
   return [
     {
-      name: 'detail',
+      name: 'total',
       type: 'select',
-      label: '详情',
+      label: '总量',
       property: 'dimension',
       placeholder: '请选择对应的字段',
       isAddWSNeed: true
     },
     {
-      name: 'firstName',
+      name: 'average',
       type: 'select',
-      label: 'label',
+      label: '平均量',
       property: 'dimension',
       placeholder: '请选择对应的字段',
       isAddWSNeed: true

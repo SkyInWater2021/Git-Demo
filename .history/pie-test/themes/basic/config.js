@@ -1,5 +1,6 @@
 export default function (themeType, SHOWUTILS) {
   const { intl, style } = SHOWUTILS
+
   return [
     {
       title: intl.formatMessage({ id: 'pie', defaultMessage: '饼图' }),
@@ -7,7 +8,10 @@ export default function (themeType, SHOWUTILS) {
       fields: [
         {
           name: 'series_radius_0',
-          label: intl.formatMessage({ id: 'inner radius', defaultMessage: '内半径' }),
+          label: intl.formatMessage({
+            id: 'inner radius',
+            defaultMessage: '内半径'
+          }),
           type: 'number',
           suffix: '%',
           props: {
@@ -18,7 +22,10 @@ export default function (themeType, SHOWUTILS) {
         },
         {
           name: 'series_radius_1',
-          label: intl.formatMessage({ id: 'outer radius', defaultMessage: '外半径' }),
+          label: intl.formatMessage({
+            id: 'outer radius',
+            defaultMessage: '外半径'
+          }),
           type: 'number',
           suffix: '%',
           props: {
@@ -55,19 +62,31 @@ export default function (themeType, SHOWUTILS) {
                 value: '{c}'
               },
               {
-                name: intl.formatMessage({ id: 'value%', defaultMessage: '值%' }),
+                name: intl.formatMessage({
+                  id: 'value%',
+                  defaultMessage: '值%'
+                }),
                 value: '{c}%'
               },
               {
-                name: intl.formatMessage({ id: 'name', defaultMessage: '名称' }),
+                name: intl.formatMessage({
+                  id: 'name',
+                  defaultMessage: '名称'
+                }),
                 value: '{b}'
               },
               {
-                name: intl.formatMessage({ id: 'name: value', defaultMessage: '名称 ：值' }),
+                name: intl.formatMessage({
+                  id: 'name: value',
+                  defaultMessage: '名称 ：值'
+                }),
                 value: '{b} : {c}'
               },
               {
-                name: intl.formatMessage({ id: 'name: value%', defaultMessage: '名称 ：值%' }),
+                name: intl.formatMessage({
+                  id: 'name: value%',
+                  defaultMessage: '名称 ：值%'
+                }),
                 value: '{c}%\n{b}'
               }
             ]
@@ -77,7 +96,10 @@ export default function (themeType, SHOWUTILS) {
         {
           type: 'compose',
           rel: 'toggle:series_label_show',
-          label: intl.formatMessage({ id: 'size number', defaultMessage: '字号' }),
+          label: intl.formatMessage({
+            id: 'size number',
+            defaultMessage: '字号'
+          }),
           fields: [
             {
               name: 'series_label_textStyle_fontSize',
@@ -99,13 +121,24 @@ export default function (themeType, SHOWUTILS) {
           props: {
             options: [
               {
-                name: intl.formatMessage({ id: 'inside', defaultMessage: '内部' }),
+                name: intl.formatMessage({
+                  id: 'inside',
+                  defaultMessage: '内部'
+                }),
                 value: 'inside'
-              }, {
-                name: intl.formatMessage({ id: 'outside', defaultMessage: '外部' }),
+              },
+              {
+                name: intl.formatMessage({
+                  id: 'outside',
+                  defaultMessage: '外部'
+                }),
                 value: 'top'
-              }, {
-                name: intl.formatMessage({ id: 'circle center', defaultMessage: '圆中心' }),
+              },
+              {
+                name: intl.formatMessage({
+                  id: 'circle center',
+                  defaultMessage: '圆中心'
+                }),
                 value: 'center'
               }
             ]
@@ -115,14 +148,20 @@ export default function (themeType, SHOWUTILS) {
         {
           name: 'series_labelLine_show',
           rel: 'toggle:series_label_show,series_label_position=top',
-          label: intl.formatMessage({ id: 'label lines', defaultMessage: '标签线' }),
+          label: intl.formatMessage({
+            id: 'label lines',
+            defaultMessage: '标签线'
+          }),
           type: 'checkbox',
           action: 'toggle',
           value: true
         },
         {
           name: 'series_labelLine_length',
-          label: intl.formatMessage({ id: 'length', defaultMessage: '标签线长' }),
+          label: intl.formatMessage({
+            id: 'length',
+            defaultMessage: '标签线长'
+          }),
           type: 'number',
           rel: 'toggle:series_label_show,series_labelLine_show,series_label_position=top',
           value: 10
@@ -143,7 +182,10 @@ export default function (themeType, SHOWUTILS) {
         {
           type: 'compose',
           rel: 'toggle:legend_show',
-          label: intl.formatMessage({ id: 'size number', defaultMessage: '字号' }),
+          label: intl.formatMessage({
+            id: 'size number',
+            defaultMessage: '字号'
+          }),
           fields: [
             {
               name: 'legend_textStyle_fontSize',
@@ -151,7 +193,6 @@ export default function (themeType, SHOWUTILS) {
               value: style.legend.textStyle.fontSize
             },
             {
-
               name: 'legend_textStyle_color',
               type: 'color',
               value: style.legend.textStyle.color
