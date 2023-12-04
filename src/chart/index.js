@@ -30,15 +30,13 @@ export const Chart = function (Base) {
 
     getChartOption() {
       const option = {
-        tooltip: {
-          trigger: 'item'
-        },
-        grid: { left: '10%', right: '10%', bottom: 20, top: 40 },
+        grid: { left: 0, right: 0, top: 0, bottom: 0 },
         legend: [
           {
-            data: ['收集个数', '分发个数', '收集文件量', '分发文件量'],
-            top: 0,
-            itemWidth: 24,
+            data: this.parserData.legendData,
+            bottom: 10,
+            icon: 'circle',
+            itemWidth: 12,
             itemHeight: 12,
             textStyle: {
               fontSize: 12,
@@ -46,116 +44,24 @@ export const Chart = function (Base) {
             }
           }
         ],
-
-        xAxis: [
-          {
-            type: 'category',
-            axisPointer: { type: 'shadow' },
-            axisLabel: { color: 'white' },
-            data: this.parserData.xAxisData.map((item) => {
-              const str = String(item)
-              return str.slice(str.length - 2)
-            }),
-            axisTick: { show: false },
-            axisLine: {
-              lineStyle: {
-                color: '#3e7fce'
-              }
-            }
-          }
-        ],
-        yAxis: [
-          {
-            type: 'value',
-            name: '单位(G)',
-            nameTextStyle: {
-              color: '#6DB5D7'
-            },
-            axisTick: { show: false },
-            axisLabel: { color: '#6DB5D7' },
-            axisLine: { lineStyle: { color: '#6DB5D7' } },
-            splitLine: { show: true, lineStyle: { color: '#6DB5D7' } }
-          },
-          {
-            type: 'value',
-            unit: 'G',
-            axisTick: { show: false },
-            axisLabel: { color: '#6DB5D7' },
-            axisLine: { lineStyle: { color: '#6DB5D7' } },
-            splitLine: { show: true, lineStyle: { color: '#6DB5D7' } }
-          }
-        ],
-
         series: [
           {
-            name: '收集个数',
-            type: 'bar',
-            data: this.parserData.collectionData,
-            barGap: 1,
-            barWidth: '10px',
-            showBackground: true,
-            backgroundStyle: { opacity: 0.5 },
-            label: {
-              show: true,
-              position: 'outside',
-              distance: 0,
-              fontSize: 4,
-              color: 'rgba(0,0,0,0)',
-              backgroundColor: '#d9f4f5',
-              shadowBlur: 6,
-              shadowColor: 'white'
+            name: 'bubble',
+            type: 'graph',
+            layout: 'force',
+            draggable: true,
+            roam: true,
+            label: { show: false, color: 'white', fontSize: 12 },
+            labelLayout: { align: 'center', moveOverlap: true, fontSize: 22 },
+            data: this.parserData.seriesData,
+            categories: this.parserData.categoryData,
+            emphasis: {
+              label: { align: 'center', show: true }
             },
-            itemStyle: {
-              color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [
-                { offset: 0, color: '#3f8bf4' },
-                { offset: 0.5, color: '#3f8bf4' },
-                { offset: 1, color: '#84e2fb' }
-              ]),
-              shadowColor: 'white',
-              shadowBlur: 1
+            force: {
+              repulsion: 50,
+              gravity: this.gravity
             }
-          },
-          {
-            name: '分发个数',
-            type: 'bar',
-            data: this.parserData.distributeData,
-            barWidth: '10px',
-            barGap: 1,
-            showBackground: true,
-            backgroundStyle: { opacity: 0.5 },
-            label: {
-              show: true,
-              position: 'outside',
-              distance: 0,
-              fontSize: 4,
-              color: 'rgba(0,0,0,0)',
-              backgroundColor: '#d9f4f5',
-              shadowBlur: 6,
-              shadowColor: 'white'
-            },
-            itemStyle: {
-              color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [
-                { offset: 0, color: '#4fad89' },
-                { offset: 0.5, color: '#4fad89' },
-                { offset: 1, color: '#93fbf8' }
-              ])
-            }
-          },
-          {
-            name: '收集文件量',
-            type: 'line',
-            symbol: 'none',
-            yAxisIndex: 1,
-            data: this.parserData.downCollectionData,
-            itemStyle: { color: '#5397c5' }
-          },
-          {
-            name: '分发文件量',
-            type: 'line',
-            symbol: 'none',
-            yAxisIndex: 1,
-            itemStyle: { color: '#e4cb5d' },
-            data: this.downloadDistributeData
           }
         ]
       }

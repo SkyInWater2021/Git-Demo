@@ -46,7 +46,7 @@ export function formatNumberAsGigabytes(number) {
     throw new Error('Input must be a non-negative number')
   }
 
-  const gigabyte = 1e9 // 1 G = 10^9
+  const gigabyte = 1024 * 1024 * 1024
 
   const result = number / gigabyte
 

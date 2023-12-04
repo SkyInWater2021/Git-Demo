@@ -1,0 +1,90 @@
+{
+  "PROCESS_LINK": {
+    "name": {
+      "code": "PROCESS_LINK",
+      "name": "PROCESS_LINK",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      9,
+      9,
+      3,
+      3
+    ]
+  },
+  "PERIOD_DATE": {
+    "name": {
+      "code": "PERIOD_DATE",
+      "name": "PERIOD_DATE",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      2023120106,
+      2023120105,
+      2023120104,
+      2023120103
+    ]
+  },
+  "FILESIZE_COUNT": {
+    "name": {
+      "code": "FILESIZE_COUNT",
+      "name": "FILESIZE_COUNT",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      88336512865,
+      82967753162,
+      83094171111,
+      89491940136
+    ]
+  },
+  "FILE_COUNT": {
+    "name": {
+      "code": "FILE_COUNT",
+      "name": "FILE_COUNT",
+      "type": "Text",
+      "expression": "",
+      "calculation": "",
+      "decimal": "",
+      "unit": "",
+      "sort": 0,
+      "isBinding": true,
+      "disabled": false,
+      "isDict": false,
+      "dictId": ""
+    },
+    "data": [
+      225234,
+      223850,
+      220378,
+      223162
+    ]
+  }
+}

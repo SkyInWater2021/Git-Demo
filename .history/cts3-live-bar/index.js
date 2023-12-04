@@ -1,6 +1,6 @@
 import setBasic, { config, dataConfig } from './themes/basic'
 
-export const name = 'ctsEmpty'
+export const name = 'ctsLiveBar'
 
 export const styleSetGenerators = { basic: config }
 export const dataConfigGenerators = { basic: dataConfig }

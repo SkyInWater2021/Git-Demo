@@ -1,6 +1,6 @@
 import setBasic, { config, dataConfig } from './themes/basic'
 
-export const name = 'ctsEmpty'
+export const name = 'ctsWarningMessage'
 
 export const styleSetGenerators = { basic: config }
 export const dataConfigGenerators = { basic: dataConfig }
