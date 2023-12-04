@@ -29,38 +29,41 @@ export const Chart = function (Base) {
     }
 
     getChartOption() {
+      const value = 50
+
       const option = {
-        grid: { left: 0, right: 0, top: 0, bottom: 0 },
-        legend: [
+        title: [
           {
-            data: this.parserData.legendData,
-            bottom: 10,
-            icon: 'circle',
-            itemWidth: 12,
-            itemHeight: 12,
-            textStyle: {
-              fontSize: 12,
-              color: 'white'
-            }
+            text: `${value}%`,
+            x: 'center',
+            top: 'center',
+            textStyle: { fontSize: '14', color: 'white' }
           }
         ],
+        polar: {
+          radius: ['100%', '75%'],
+          center: ['50%', '50%']
+        },
+        angleAxis: {
+          max: 100,
+          show: false
+        },
+        radiusAxis: { type: 'category' },
         series: [
           {
-            name: 'bubble',
-            type: 'graph',
-            layout: 'force',
-            draggable: true,
-            roam: true,
-            label: { show: false, color: 'white', fontSize: 12 },
-            labelLayout: { align: 'center', moveOverlap: true, fontSize: 22 },
-            data: this.parserData.seriesData,
-            categories: this.parserData.categoryData,
-            emphasis: {
-              label: { align: 'center', show: true }
-            },
-            force: {
-              repulsion: 50,
-              gravity: this.gravity
+            name: '',
+            type: 'bar',
+            roundCap: true,
+            coordinateSystem: 'polar',
+            showBackground: true,
+            data: [value],
+            itemStyle: {
+              normal: {
+                color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [
+                  { offset: 0, color: '#068DFE' },
+                  { offset: 1, color: '#00FF9C' }
+                ])
+              }
             }
           }
         ]

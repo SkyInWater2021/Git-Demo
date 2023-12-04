@@ -1,0 +1,52 @@
+.strategy-list__wrapper.common-cpn__wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.strategy-list__wrapper {
+  color: white;
+}
+
+.strategy-list__wrapper .title-container {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 4px;
+  background-size: 100% 100%;
+}
+.strategy-list__wrapper .title-container img {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+
+.strategy-list__wrapper .list-ul {
+  height: 100%;
+  overflow-y: scroll;
+}
+.strategy-list__wrapper .list-ul::-webkit-scrollbar {
+  width: 0; /* 设置滚动条的宽度为0 */
+}
+
+.strategy-list__wrapper .list-li__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+  line-height: 22px;
+  background: url(../imgs/list-li.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 0 10px;
+}
+
+.strategy-list__wrapper .list-icon {
+  width: 3px;
+  height: 3px;
+  background: #dff5f8;
+  box-shadow: 0 0 1px 1px #dff5f8;
+  margin: 0 12px;
+}
+
+.strategy-list__wrapper .list-item__label {
+  flex: 1;
+}

@@ -43,7 +43,7 @@ export const Chart = function (Base) {
       if (isNew) domEls += newEl
       domEls += moreBtnEl
 
-      this.el.innerHTML = `<div class="custom-cpn__wrapper">
+      this.el.innerHTML = `<div class="custom-cpn__wrapper warning_bg">
         <div class="warning-wrapper">
           ${domEls}
         </div>

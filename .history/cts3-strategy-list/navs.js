@@ -1,8 +1,8 @@
 export function setBasicNav(intl) {
   return {
     title: intl.formatMessage({
-      id: 'cts3-get-data-demo',
-      defaultMessage: '获取平台接口数据测试组件'
+      id: 'cts3-cts-strategy-list-id',
+      defaultMessage: 'cts3策略列表'
     }),
     isPlugin: true,
     navCategory: 'charts.themes.multiChart',

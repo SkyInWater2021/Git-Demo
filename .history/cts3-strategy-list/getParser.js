@@ -1,18 +1,20 @@
 import defaultData from './defaultData.json'
 
 export const dataKeyMap = {
-  detail: 'detail',
-  periodId: 'PERIOD_DATE',
-  first: 'DATA_TYPE_FIRST',
-  firstName: 'DATA_TYPE_FIRST_NAME',
-  fileCount: 'FILE_COUNT',
-  fileSizeCount: 'FILESIZE_COUNT'
+  detail: 'detail'
 }
 
 // 处理数据
 export function handleData(data = defaultData, config = dataKeyMap) {
-  console.log(data)
-  return {}
+  console.log(data, config)
+
+  const titleType = config.type ?? '类别'
+  const titleText = config.title ?? '默认标题'
+
+  return {
+    titleType,
+    titleText
+  }
 }
 
 export default function () {
