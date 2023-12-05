@@ -1,6 +1,6 @@
 import setBasic, { config, dataConfig } from './themes/basic'
 
-export const name = 'demoEmpty'
+export const name = 'ctsResourceList'
 
 export const styleSetGenerators = { basic: config }
 export const dataConfigGenerators = { basic: dataConfig }
