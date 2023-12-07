@@ -2,7 +2,8 @@ module.exports = {
   root: true,
   globals: {
     $: true,
-    CHART_PLUGIN: true
+    CHART_PLUGIN: true,
+    d3: true
   },
   extends: ['@uyun/eslint-config-standard'],
   rules: {

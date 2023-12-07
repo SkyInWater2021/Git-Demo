@@ -1,7 +1,9 @@
+/* eslint-disable indent */
 import './global.css'
-import { handleData } from '../getParser'
-import { titleIcon, resourceBg } from '../imgs/title-icon'
-import { cyan, yellow, green, purple } from '../imgs/icons'
+import * as d3 from 'd3'
+import * as echarts from 'echarts'
+import { randomString } from '../utils'
+import { defaultData, handleData } from '../getParser'
 
 export const Chart = function (Base) {
   class Basic extends Base {
@@ -9,43 +11,12 @@ export const Chart = function (Base) {
       super(...arguments)
       this.el = el
 
-      this.parserData = handleData()
+      this.chartInstance = null
+      this.chartInstanceId = randomString()
 
-      this.demoData = [
-        'N15-babj-cts-01',
-        'N15-babj-cts-02',
-        'N15-babj-cts-03',
-        'N15-babj-cts-04',
-        'N15-babj-cts-05',
-        'N15-babj-cts-06',
-        'N15-babj-cts-07',
-        'N15-babj-cts-08',
-        'N15-babj-cts-09',
-        'N15-babj-cts-10',
-        'N15-babj-cts-11',
-        'N15-babj-cts-12',
-        'N15-babj-cts-13',
-        'N15-babj-cts-14',
-        'N15-babj-cts-15'
-      ]
-      this.currentContent = []
-      this.columns = 2
-      this.pageSize = 6
-      this.currentPage = 1
-      this.totalPage = 1
+      this.parserData = handleData(defaultData)
 
-      this.id = this.randomString(10) + 'resourceIndicator'
-    }
-
-    randomString(len) {
-      const chars =
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890'
-      const maxPos = chars.length
-      let str = ''
-      for (let i = 0; i < len; i++) {
-        str += chars.charAt(Math.floor(Math.random() * maxPos))
-      }
-      return str
+      this.displayRoot = null
     }
 
     setData(data) {
@@ -53,115 +24,147 @@ export const Chart = function (Base) {
       this.render()
     }
 
-    // 标题
-    renderTitle(title) {
-      const iconEl = `<img src="${titleIcon}"></img>`
-      const titleText = `<span class="title-text">${title}</span>`
-      return `<div class="resource-list__title">
-        ${iconEl}
-        ${titleText}
-      </div>`
+    stratify(seriesData) {
+      return d3
+        .stratify()
+        .parentId(function (d) {
+          return d.id.substring(0, d.id.lastIndexOf('.'))
+        })(seriesData)
+        .sum(function (d) {
+          return d.value || 0
+        })
+        .sort(function (a, b) {
+          return b.value - a.value
+        })
     }
 
-    // 内容
-    renderContent() {
-      const icons = [cyan, green, yellow, purple]
-      const labels = ['接入', '收集', '处理', '分发']
-      const values = [10, 100, 200, 52]
-
-      let contentItemEls = ''
-
-      icons.forEach((icon, index) => {
-        contentItemEls += `<div class="content-item">
-          <img src="${icon}"/>
-          <span>${labels[index]}：${values[index]}</span>
-        </div>`
+    overallLayout(params, api) {
+      const context = params.context
+      d3
+        .pack()
+        .size([api.getWidth() - 2, api.getHeight() - 2])
+        .padding(3)(this.displayRoot)
+      context.nodes = {}
+      this.displayRoot.descendants().forEach(function (node) {
+        context.nodes[node.id] = node
       })
-
-      return `<div class="content-wrapper">${contentItemEls}</div>`
     }
 
-    // 列表
-    renderList() {
-      let listEls = ''
+    renderItem(params, api) {
+      const context = params.context
+      if (!context.layout) {
+        context.layout = true
+        this.overallLayout(params, api)
+      }
+      const nodePath = api.value('id')
+      const node = context.nodes[nodePath]
+      if (!node || node.data.name !== params.seriesName) return
 
-      this.currentContent = this.demoData.slice(
-        (this.currentPage - 1) * this.pageSize,
-        this.currentPage * this.pageSize
+      const focus = new Uint32Array(
+        node.descendants().map(function (node) {
+          return node.data.index
+        })
       )
 
-      this.currentContent.forEach((title) => {
-        const titleEl = this.renderTitle(title)
-        const contentEl = this.renderContent()
-        listEls += `<div class="list-item" style="background: url(${resourceBg}) no-repeat,
-         linear-gradient(transparent 42%, #defaf866 45% 88%, transparent 90%) no-repeat;
-         background-size: 100% 100%, 1px 100%;
-         background-position: 0 0, 48% 50%;">
-        ${titleEl}
-        ${contentEl}
-       </div>`
-      })
+      const z2 = api.value('depth') * 2
+      return {
+        type: 'circle',
+        focus: focus,
+        shape: { cx: node.x, cy: node.y, r: node.r },
+        transition: ['shape'],
+        z2: z2,
+        textContent: {
+          type: 'text',
+          style: {
+            text: node.depth <= 1 ? '' : node.data.label,
+            fontFamily: 'Arial',
+            width: node.r * 1.3,
+            overflow: 'truncate',
+            fontSize: node.r / 3,
+            color: 'white'
+          },
 
-      const lastLength = this.currentContent.length % this.columns
-      const extra = lastLength === 0 ? 0 : this.columns - lastLength
-
-      if (extra > 0) {
-        for (let i = 0; i < extra; i++) {
-          listEls += `<div class="list-item" style="height:0;"></div>`
+          emphasis: {
+            style: {
+              overflow: null,
+              fontSize: Math.max(node.r / 3, 12)
+            }
+          }
+        },
+        textConfig: {
+          position: 'inside'
+        },
+        style: {
+          fill: node.data.color
         }
       }
-      return listEls
     }
 
-    renderIndicator() {
-      let indicatorEls = ''
-
-      for (let i = 1; i <= this.totalPage; i++) {
-        indicatorEls += `<div class="indicator-item ${
-          i === this.currentPage ? 'indicator-item__active' : ''
-        }" data-page-index=${i}></div>`
+    initChart(seriesData, maxDepth, chartInstance) {
+      this.displayRoot = this.stratify(seriesData)
+      const option = {
+        dataset: { source: seriesData },
+        legend: {
+          data: this.parserData.legendData,
+          bottom: 0,
+          icon: 'circle',
+          itemWidth: 10,
+          itemHeight: 10,
+          textStyle: { fontSize: 10, color: 'white' }
+        },
+        tooltip: {
+          trigger: 'item',
+          formatter: (e) => {
+            let el = ''
+            if (e.value?.value) {
+              el = `<div>${e.value?.value ?? ''}</div>`
+            }
+            return el
+          }
+        },
+        hoverLayerThreshold: Infinity,
+        series: this.parserData.legendData.map((legend) => {
+          return {
+            type: 'custom',
+            name: legend.name,
+            renderItem: (params, api) => {
+              return this.renderItem(params, api)
+            },
+            coordinateSystem: 'none'
+          }
+        })
       }
+      chartInstance.setOption(option)
+    }
 
-      const changePage = (event) => {
-        const { pageIndex } = event?.target?.dataset ?? {}
-        if (this.currentPage === Number(pageIndex)) return
-
-        this.currentPage = Number(pageIndex)
-        this.render()
-      }
-
-      // 添加事件
+    renderChart() {
+      const container = `<div id="${this.chartInstanceId}" class="common-chart__container"></div>`
       const timer = setInterval(() => {
-        const el = document.getElementById(this.id)
+        const el = document.getElementById(this.chartInstanceId)
         if (el) {
           clearInterval(timer)
-          el.onclick = (event) => changePage(event)
+          el.removeAttribute('_echarts_instance_')
+          el.innerHTML = ''
+          this.chartInstance = echarts.init(el)
+
+          const { seriesData } = this.parserData
+          this.initChart(seriesData, 2, this.chartInstance)
+          this.chartInstance.resize()
         }
       })
 
-      return `<div id="${this.id}" class="indicator-wrapper">${indicatorEls}</div>`
+      return container
     }
 
     render() {
-      this.el.innerHTML = ''
-
+      this.el.innerHTML = 'hello world'
       let domEls = ''
-      domEls += this.renderList()
-      domEls += this.renderIndicator()
-      this.el.innerHTML = `<div class="common-cpn__wrapper ">
-      <div class="resource-list__container">${domEls}</div>
-      </div>`
+      domEls += this.renderChart()
+      this.el.innerHTML = `<div class="common-cpn__wrapper">${domEls}</div>`
     }
 
     resize({ width, height }) {
       this.el.style.cssText += `;width:${width}px;height:${height}px;`
-    }
-
-    setSeriesStyle(config) {
-      this.columns = config.columns ?? 2
-      this.pageSize = config.pageSize ?? 6
-      this.currentPage = 1
-      this.totalPage = Math.ceil(this.demoData.length / this.pageSize)
     }
   }
 

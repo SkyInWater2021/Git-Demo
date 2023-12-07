@@ -1,0 +1,1784 @@
+{
+  "cache": 1,
+  "code": 200,
+  "msg": "正常",
+  "data": [
+    {
+      "detail": [
+        {
+          "USER_ID": "数据归档_new",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 65391,
+          "FILESIZE_COUNT": 1911358920934
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_B",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 133267,
+          "FILESIZE_COUNT": 1898961240393
+        },
+        {
+          "USER_ID": "XiaZaiPingTai_ftp_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 69720,
+          "FILESIZE_COUNT": 1447084650854
+        },
+        {
+          "USER_ID": "tcfw_service",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 4690,
+          "FILESIZE_COUNT": 463011020364
+        },
+        {
+          "USER_ID": "kjcs_DMZ",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 4267,
+          "FILESIZE_COUNT": 413109644055
+        },
+        {
+          "USER_ID": "kjcs_nas",
+          "USER_ID_NAME": "kjcs_nas",
+          "FILE_COUNT": 310,
+          "FILESIZE_COUNT": 409079462586
+        },
+        {
+          "USER_ID": "CMADAAS_NAS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 59601,
+          "FILESIZE_COUNT": 341661506640
+        },
+        {
+          "USER_ID": "tcfw_babj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 52749,
+          "FILESIZE_COUNT": 338084960541
+        },
+        {
+          "USER_ID": "下载平台_gd_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 27114,
+          "FILESIZE_COUNT": 315063821868
+        },
+        {
+          "USER_ID": "kjcs_cts",
+          "USER_ID_NAME": "kjcs_cts",
+          "FILE_COUNT": 51603,
+          "FILESIZE_COUNT": 249775175943
+        },
+        {
+          "USER_ID": "micaps4_0_a_GFS",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 454,
+          "FILESIZE_COUNT": 241794930163
+        },
+        {
+          "USER_ID": "huaxin",
+          "USER_ID_NAME": "华信",
+          "FILE_COUNT": 188,
+          "FILESIZE_COUNT": 224840904307
+        },
+        {
+          "USER_ID": "CMADAAS_NAS10",
+          "USER_ID_NAME": "CMADAAS_NAS10",
+          "FILE_COUNT": 7971,
+          "FILESIZE_COUNT": 207623278635
+        },
+        {
+          "USER_ID": "nsmc_nafp",
+          "USER_ID_NAME": "卫星中心",
+          "FILE_COUNT": 129,
+          "FILESIZE_COUNT": 194453732314
+        },
+        {
+          "USER_ID": "GISC",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 125,
+          "FILESIZE_COUNT": 187190885082
+        },
+        {
+          "USER_ID": "cmacast2",
+          "USER_ID_NAME": "cmacast2",
+          "FILE_COUNT": 59873,
+          "FILESIZE_COUNT": 172951467728
+        },
+        {
+          "USER_ID": "智能网格",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 10328,
+          "FILESIZE_COUNT": 149996141320
+        },
+        {
+          "USER_ID": "DMZ_NAFP",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 2871,
+          "FILESIZE_COUNT": 135880744218
+        },
+        {
+          "USER_ID": "nmic_zls_nwfd",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1122,
+          "FILESIZE_COUNT": 76590931026
+        },
+        {
+          "USER_ID": "micaps4_1_a_ec",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 3430,
+          "FILESIZE_COUNT": 74760111976
+        },
+        {
+          "USER_ID": "MICAPS4_2",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 2145,
+          "FILESIZE_COUNT": 72905082364
+        },
+        {
+          "USER_ID": "Internet_96_gts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1377,
+          "FILESIZE_COUNT": 51224216610
+        },
+        {
+          "USER_ID": "培训中心",
+          "USER_ID_NAME": "干部学院",
+          "FILE_COUNT": 49562,
+          "FILESIZE_COUNT": 44560587852
+        },
+        {
+          "USER_ID": "qxt_taihaizx_ec",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 132,
+          "FILESIZE_COUNT": 43318031917
+        },
+        {
+          "USER_ID": "MICAPS4_0",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 12901,
+          "FILESIZE_COUNT": 37724783326
+        },
+        {
+          "USER_ID": "micaps4_0_a_ec",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 1481,
+          "FILESIZE_COUNT": 34165272408
+        },
+        {
+          "USER_ID": "培训中心_abroad",
+          "USER_ID_NAME": "干部学院",
+          "FILE_COUNT": 274,
+          "FILESIZE_COUNT": 33203742172
+        },
+        {
+          "USER_ID": "nmic_pi_xuyan",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 171,
+          "FILESIZE_COUNT": 31828825542
+        },
+        {
+          "USER_ID": "nmic_pi_artop_abroad",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 116,
+          "FILESIZE_COUNT": 29966335036
+        },
+        {
+          "USER_ID": "nmic_pi",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 38,
+          "FILESIZE_COUNT": 20132290276
+        },
+        {
+          "USER_ID": "CMADAAS_NAS1",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 181,
+          "FILESIZE_COUNT": 19919446565
+        },
+        {
+          "USER_ID": "MICAPS4_3",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 937,
+          "FILESIZE_COUNT": 8654265495
+        },
+        {
+          "USER_ID": "气科院_RAD",
+          "USER_ID_NAME": "气科院",
+          "FILE_COUNT": 49101,
+          "FILESIZE_COUNT": 4229351737
+        },
+        {
+          "USER_ID": "MICAPS4_5",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 229,
+          "FILESIZE_COUNT": 3308375511
+        },
+        {
+          "USER_ID": "qxt_区域检验",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 4,
+          "FILESIZE_COUNT": 2241069707
+        },
+        {
+          "USER_ID": "micaps4_2_abroad",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 1450,
+          "FILESIZE_COUNT": 2099588060
+        },
+        {
+          "USER_ID": "behz_asiangames",
+          "USER_ID_NAME": "浙江信息中心",
+          "FILE_COUNT": 1137,
+          "FILESIZE_COUNT": 2045339584
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_A",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1039,
+          "FILESIZE_COUNT": 1206568773
+        },
+        {
+          "USER_ID": "MICAPS4_1",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 242,
+          "FILESIZE_COUNT": 788135693
+        },
+        {
+          "USER_ID": "kjcs_ger_icon",
+          "USER_ID_NAME": "kjcs_ger_icon",
+          "FILE_COUNT": 887,
+          "FILESIZE_COUNT": 723043125
+        },
+        {
+          "USER_ID": "nmic_piop_ncc",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 2,
+          "FILESIZE_COUNT": 276217255
+        },
+        {
+          "USER_ID": "qxt_nafp_ec",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 55,
+          "FILESIZE_COUNT": 184289821
+        },
+        {
+          "USER_ID": "气象台_RFFC_grid",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 24,
+          "FILESIZE_COUNT": 9079762
+        }
+      ],
+      "PERIOD_DATE": 20231206,
+      "DATA_TYPE_FIRST": "F",
+      "DATA_TYPE_FIRST_NAME": "数值预报",
+      "FILE_COUNT": 678688,
+      "FILESIZE_COUNT": 9897987469538
+    },
+    {
+      "detail": [
+        {
+          "USER_ID": "数据归档_new",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 154868,
+          "FILESIZE_COUNT": 1508947910850
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_B",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 207133,
+          "FILESIZE_COUNT": 1010392844654
+        },
+        {
+          "USER_ID": "tcfw_service",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 82732,
+          "FILESIZE_COUNT": 756389178043
+        },
+        {
+          "USER_ID": "XiaZaiPingTai_ftp_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 158064,
+          "FILESIZE_COUNT": 736145364769
+        },
+        {
+          "USER_ID": "kjcs_cts",
+          "USER_ID_NAME": "kjcs_cts",
+          "FILE_COUNT": 34258,
+          "FILESIZE_COUNT": 718596355312
+        },
+        {
+          "USER_ID": "nmic_pi_g1_sat",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 34786,
+          "FILESIZE_COUNT": 296653229814
+        },
+        {
+          "USER_ID": "cmacast2",
+          "USER_ID_NAME": "cmacast2",
+          "FILE_COUNT": 43606,
+          "FILESIZE_COUNT": 275089654208
+        },
+        {
+          "USER_ID": "nmic_qxcs_g3_sat",
+          "USER_ID_NAME": "nmic_qxcs_g3_sat",
+          "FILE_COUNT": 12845,
+          "FILESIZE_COUNT": 254518138496
+        },
+        {
+          "USER_ID": "nmic_tansat",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 10701,
+          "FILESIZE_COUNT": 230785558573
+        },
+        {
+          "USER_ID": "tcfw_babj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 33551,
+          "FILESIZE_COUNT": 230730796979
+        },
+        {
+          "USER_ID": "nmic_qxcs_g3",
+          "USER_ID_NAME": "nmic_qxcs_g3",
+          "FILE_COUNT": 108588,
+          "FILESIZE_COUNT": 183013923856
+        },
+        {
+          "USER_ID": "nmic_pi_g1",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 107069,
+          "FILESIZE_COUNT": 177235759401
+        },
+        {
+          "USER_ID": "CMADAAS_NAS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 109692,
+          "FILESIZE_COUNT": 167293378161
+        },
+        {
+          "USER_ID": "kjcs_DMZ",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 14916,
+          "FILESIZE_COUNT": 159218507850
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_A",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 142457,
+          "FILESIZE_COUNT": 131812245461
+        },
+        {
+          "USER_ID": "micaps4_2_abroad",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 13090,
+          "FILESIZE_COUNT": 50362434229
+        },
+        {
+          "USER_ID": "micaps4_1_a_ec",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 4476,
+          "FILESIZE_COUNT": 39417078030
+        },
+        {
+          "USER_ID": "nmic_sat_dmz",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 2977,
+          "FILESIZE_COUNT": 29543643816
+        },
+        {
+          "USER_ID": "LOCAL_HOST",
+          "USER_ID_NAME": "LOCAL_HOST",
+          "FILE_COUNT": 2413,
+          "FILESIZE_COUNT": 28554725068
+        },
+        {
+          "USER_ID": "培训中心",
+          "USER_ID_NAME": "干部学院",
+          "FILE_COUNT": 1469,
+          "FILESIZE_COUNT": 18793112248
+        },
+        {
+          "USER_ID": "气科院_RAD",
+          "USER_ID_NAME": "气科院",
+          "FILE_COUNT": 1447,
+          "FILESIZE_COUNT": 17746900632
+        },
+        {
+          "USER_ID": "kjcs_sate",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 11947,
+          "FILESIZE_COUNT": 17538895811
+        },
+        {
+          "USER_ID": "GTS_NSMC",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 6007,
+          "FILESIZE_COUNT": 16627258238
+        },
+        {
+          "USER_ID": "nmic_pi_xubin",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 912,
+          "FILESIZE_COUNT": 13264591325
+        },
+        {
+          "USER_ID": "业务内网_nsmc_p",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 5631,
+          "FILESIZE_COUNT": 7768580862
+        },
+        {
+          "USER_ID": "nmic_pi_artop_abroad",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 524,
+          "FILESIZE_COUNT": 7553206476
+        },
+        {
+          "USER_ID": "MICAPS4_3",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 1192,
+          "FILESIZE_COUNT": 5854710509
+        },
+        {
+          "USER_ID": "local_host_2",
+          "USER_ID_NAME": "local_host_2",
+          "FILE_COUNT": 742,
+          "FILESIZE_COUNT": 3362569429
+        },
+        {
+          "USER_ID": "NMIC_DRD",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 28,
+          "FILESIZE_COUNT": 2432903309
+        },
+        {
+          "USER_ID": "qxt_RADA_forecast",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 1132,
+          "FILESIZE_COUNT": 2318149138
+        },
+        {
+          "USER_ID": "MICAPS4_3_1",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 519,
+          "FILESIZE_COUNT": 1802192634
+        },
+        {
+          "USER_ID": "STHBGC",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 901,
+          "FILESIZE_COUNT": 1381819690
+        },
+        {
+          "USER_ID": "国际GTS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 8134,
+          "FILESIZE_COUNT": 175875421
+        },
+        {
+          "USER_ID": "数值预报_FY3",
+          "USER_ID_NAME": "数值预报中心",
+          "FILE_COUNT": 14,
+          "FILESIZE_COUNT": 173346148
+        },
+        {
+          "USER_ID": "internet_96_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 110,
+          "FILESIZE_COUNT": 142451396
+        },
+        {
+          "USER_ID": "hesd_start",
+          "USER_ID_NAME": "hesd_start",
+          "FILE_COUNT": 54,
+          "FILESIZE_COUNT": 67069590
+        }
+      ],
+      "PERIOD_DATE": 20231206,
+      "DATA_TYPE_FIRST": "K",
+      "DATA_TYPE_FIRST_NAME": "卫星",
+      "FILE_COUNT": 1318985,
+      "FILESIZE_COUNT": 7101704360426
+    },
+    {
+      "detail": [
+        {
+          "USER_ID": "CMADAAS_DPC_A",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1721018,
+          "FILESIZE_COUNT": 1125153577431
+        },
+        {
+          "USER_ID": "数据归档_new",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 2530017,
+          "FILESIZE_COUNT": 1017184080084
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_B",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 2565635,
+          "FILESIZE_COUNT": 547244280732
+        },
+        {
+          "USER_ID": "tcfw_babj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 834860,
+          "FILESIZE_COUNT": 395504234961
+        },
+        {
+          "USER_ID": "XiaZaiPingTai_ftp_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 618993,
+          "FILESIZE_COUNT": 279567356201
+        },
+        {
+          "USER_ID": "kjcs_cts",
+          "USER_ID_NAME": "kjcs_cts",
+          "FILE_COUNT": 605729,
+          "FILESIZE_COUNT": 160915063617
+        },
+        {
+          "USER_ID": "MICAPS4_3",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 48851,
+          "FILESIZE_COUNT": 118367400216
+        },
+        {
+          "USER_ID": "kjcs_sate",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 41725,
+          "FILESIZE_COUNT": 118189280620
+        },
+        {
+          "USER_ID": "local_rad",
+          "USER_ID_NAME": "local_rad",
+          "FILE_COUNT": 41722,
+          "FILESIZE_COUNT": 118176986543
+        },
+        {
+          "USER_ID": "huaxin",
+          "USER_ID_NAME": "华信",
+          "FILE_COUNT": 41705,
+          "FILESIZE_COUNT": 118126446990
+        },
+        {
+          "USER_ID": "kjcs_xzys_63",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 41681,
+          "FILESIZE_COUNT": 118030030136
+        },
+        {
+          "USER_ID": "nmic_pi_g1_rad",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 41671,
+          "FILESIZE_COUNT": 117905108453
+        },
+        {
+          "USER_ID": "CMADAAS_NAS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 40812,
+          "FILESIZE_COUNT": 69412727144
+        },
+        {
+          "USER_ID": "TCZX_S_CY",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 20311,
+          "FILESIZE_COUNT": 21004585345
+        },
+        {
+          "USER_ID": "cmacast2",
+          "USER_ID_NAME": "cmacast2",
+          "FILE_COUNT": 243707,
+          "FILESIZE_COUNT": 19647873415
+        },
+        {
+          "USER_ID": "kjcs_rad_148",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 10849,
+          "FILESIZE_COUNT": 7776129192
+        },
+        {
+          "USER_ID": "nmic_YeWuNeiWang_rad",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 20218,
+          "FILESIZE_COUNT": 7069691343
+        },
+        {
+          "USER_ID": "华丰影视",
+          "USER_ID_NAME": "华风影视",
+          "FILE_COUNT": 759,
+          "FILESIZE_COUNT": 573094500
+        },
+        {
+          "USER_ID": "气科院_RAD",
+          "USER_ID_NAME": "气科院",
+          "FILE_COUNT": 778,
+          "FILESIZE_COUNT": 571225472
+        },
+        {
+          "USER_ID": "kjcs_DMZ",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 2778,
+          "FILESIZE_COUNT": 570064661
+        },
+        {
+          "USER_ID": "TCZX_RAD2",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 2759,
+          "FILESIZE_COUNT": 37761330
+        },
+        {
+          "USER_ID": "nmic_pi_art_op",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 450,
+          "FILESIZE_COUNT": 17917436
+        },
+        {
+          "USER_ID": "国际GTS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 924,
+          "FILESIZE_COUNT": 7954246
+        },
+        {
+          "USER_ID": "TCZX_W",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 18646,
+          "FILESIZE_COUNT": 7481533
+        }
+      ],
+      "PERIOD_DATE": 20231206,
+      "DATA_TYPE_FIRST": "J",
+      "DATA_TYPE_FIRST_NAME": "雷达",
+      "FILE_COUNT": 9496598,
+      "FILESIZE_COUNT": 4361060351601
+    },
+    {
+      "detail": [
+        {
+          "USER_ID": "CMADAAS_DPC_A",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 5419657,
+          "FILESIZE_COUNT": 2339233478026
+        },
+        {
+          "USER_ID": "数据归档_new",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 2875860,
+          "FILESIZE_COUNT": 705283895919
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_B",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 968318,
+          "FILESIZE_COUNT": 661101270848
+        },
+        {
+          "USER_ID": "cmacast2",
+          "USER_ID_NAME": "cmacast2",
+          "FILE_COUNT": 920025,
+          "FILESIZE_COUNT": 41105565961
+        },
+        {
+          "USER_ID": "下载平台_gd_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 4625,
+          "FILESIZE_COUNT": 29869807306
+        },
+        {
+          "USER_ID": "XiaZaiPingTai_ftp_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 843392,
+          "FILESIZE_COUNT": 25758408534
+        },
+        {
+          "USER_ID": "tcfw_babj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 149637,
+          "FILESIZE_COUNT": 21713799710
+        },
+        {
+          "USER_ID": "XinZhiTQ",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 728658,
+          "FILESIZE_COUNT": 18858336834
+        },
+        {
+          "USER_ID": "tcfw_57_babj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 657921,
+          "FILESIZE_COUNT": 16804385844
+        },
+        {
+          "USER_ID": "kjcs_DMZ",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 56578,
+          "FILESIZE_COUNT": 15278216421
+        },
+        {
+          "USER_ID": "kjcs_cts",
+          "USER_ID_NAME": "kjcs_cts",
+          "FILE_COUNT": 48701,
+          "FILESIZE_COUNT": 4584283251
+        },
+        {
+          "USER_ID": "kjcs_htht",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 101347,
+          "FILESIZE_COUNT": 2767961795
+        },
+        {
+          "USER_ID": "探测中心_w_m",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 47187,
+          "FILESIZE_COUNT": 2327919551
+        },
+        {
+          "USER_ID": "MICAPS4_1",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 20647,
+          "FILESIZE_COUNT": 982516259
+        },
+        {
+          "USER_ID": "tcfw_service",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 45904,
+          "FILESIZE_COUNT": 514105686
+        },
+        {
+          "USER_ID": "TCZX_W",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 62801,
+          "FILESIZE_COUNT": 296920070
+        },
+        {
+          "USER_ID": "LOCAL_HOST",
+          "USER_ID_NAME": "LOCAL_HOST",
+          "FILE_COUNT": 9208,
+          "FILESIZE_COUNT": 154441969
+        },
+        {
+          "USER_ID": "local_bcuq",
+          "USER_ID_NAME": "local_bcuq",
+          "FILE_COUNT": 2696,
+          "FILESIZE_COUNT": 79404783
+        },
+        {
+          "USER_ID": "local_host_2",
+          "USER_ID_NAME": "local_host_2",
+          "FILE_COUNT": 2673,
+          "FILESIZE_COUNT": 79251749
+        },
+        {
+          "USER_ID": "气科院_RAD",
+          "USER_ID_NAME": "气科院",
+          "FILE_COUNT": 3624,
+          "FILESIZE_COUNT": 70090877
+        },
+        {
+          "USER_ID": "nmic_zls_cli",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 113,
+          "FILESIZE_COUNT": 59253128
+        },
+        {
+          "USER_ID": "培训中心",
+          "USER_ID_NAME": "干部学院",
+          "FILE_COUNT": 1366,
+          "FILESIZE_COUNT": 54072059
+        },
+        {
+          "USER_ID": "MICAPS4_3",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 1483,
+          "FILESIZE_COUNT": 43899355
+        },
+        {
+          "USER_ID": "CMADAAS_NAS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 12924,
+          "FILESIZE_COUNT": 33421133
+        },
+        {
+          "USER_ID": "国际GTS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1737,
+          "FILESIZE_COUNT": 4018250
+        },
+        {
+          "USER_ID": "qxt_RADA_forecast",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 377,
+          "FILESIZE_COUNT": 734017
+        }
+      ],
+      "PERIOD_DATE": 20231206,
+      "DATA_TYPE_FIRST": "A",
+      "DATA_TYPE_FIRST_NAME": "地面",
+      "FILE_COUNT": 12987459,
+      "FILESIZE_COUNT": 3887059459335
+    },
+    {
+      "detail": [
+        {
+          "USER_ID": "CMADAAS_DPC_B",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1396085,
+          "FILESIZE_COUNT": 180071425632
+        },
+        {
+          "USER_ID": "数据归档_new",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 914396,
+          "FILESIZE_COUNT": 99038511988
+        },
+        {
+          "USER_ID": "气科院_RAD",
+          "USER_ID_NAME": "气科院",
+          "FILE_COUNT": 359084,
+          "FILESIZE_COUNT": 87663261605
+        },
+        {
+          "USER_ID": "tcfw_service",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 318045,
+          "FILESIZE_COUNT": 87591436206
+        },
+        {
+          "USER_ID": "cmacast2",
+          "USER_ID_NAME": "cmacast2",
+          "FILE_COUNT": 294020,
+          "FILESIZE_COUNT": 75708428880
+        },
+        {
+          "USER_ID": "MICAPS4_3",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 219117,
+          "FILESIZE_COUNT": 73532413478
+        },
+        {
+          "USER_ID": "kjcs_htht",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 219518,
+          "FILESIZE_COUNT": 73449979721
+        },
+        {
+          "USER_ID": "探测中心_57",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 139324,
+          "FILESIZE_COUNT": 14146560171
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_A",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 229782,
+          "FILESIZE_COUNT": 9441508965
+        },
+        {
+          "USER_ID": "LOCAL_HOST",
+          "USER_ID_NAME": "LOCAL_HOST",
+          "FILE_COUNT": 1310,
+          "FILESIZE_COUNT": 254620622
+        },
+        {
+          "USER_ID": "kjcs_DMZ",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 58694,
+          "FILESIZE_COUNT": 178574332
+        },
+        {
+          "USER_ID": "nmic_pi_g1_rad",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 57201,
+          "FILESIZE_COUNT": 158507637
+        },
+        {
+          "USER_ID": "研究室_rad_2",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 56455,
+          "FILESIZE_COUNT": 156575725
+        },
+        {
+          "USER_ID": "XiaZaiPingTai_ftp_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1342,
+          "FILESIZE_COUNT": 103367935
+        },
+        {
+          "USER_ID": "tcfw_babj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 4326,
+          "FILESIZE_COUNT": 11405672
+        },
+        {
+          "USER_ID": "CMADAAS_NAS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 7881,
+          "FILESIZE_COUNT": 9725723
+        },
+        {
+          "USER_ID": "kjcs_cts",
+          "USER_ID_NAME": "kjcs_cts",
+          "FILE_COUNT": 8887,
+          "FILESIZE_COUNT": 8107025
+        },
+        {
+          "USER_ID": "TCZX_S_CY",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 6478,
+          "FILESIZE_COUNT": 7184043
+        },
+        {
+          "USER_ID": "培训中心",
+          "USER_ID_NAME": "干部学院",
+          "FILE_COUNT": 489,
+          "FILESIZE_COUNT": 1511265
+        },
+        {
+          "USER_ID": "Internet_96_gts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 786,
+          "FILESIZE_COUNT": 325186
+        },
+        {
+          "USER_ID": "local_host_2",
+          "USER_ID_NAME": "local_host_2",
+          "FILE_COUNT": 4,
+          "FILESIZE_COUNT": 13020
+        },
+        {
+          "USER_ID": "TCZX_W",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 161,
+          "FILESIZE_COUNT": 1510
+        }
+      ],
+      "PERIOD_DATE": 20231206,
+      "DATA_TYPE_FIRST": "B",
+      "DATA_TYPE_FIRST_NAME": "高空",
+      "FILE_COUNT": 4293385,
+      "FILESIZE_COUNT": 701533446341
+    },
+    {
+      "detail": [
+        {
+          "USER_ID": "数据归档_new",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 47567,
+          "FILESIZE_COUNT": 92092893149
+        },
+        {
+          "USER_ID": "XiaZaiPingTai_ftp_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 45147,
+          "FILESIZE_COUNT": 78019506527
+        },
+        {
+          "USER_ID": "CMADAAS_NAS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 10075,
+          "FILESIZE_COUNT": 77598965233
+        },
+        {
+          "USER_ID": "kjcs_cts",
+          "USER_ID_NAME": "kjcs_cts",
+          "FILE_COUNT": 7590,
+          "FILESIZE_COUNT": 68914325529
+        },
+        {
+          "USER_ID": "nmic_pi_g1",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1422,
+          "FILESIZE_COUNT": 68017472772
+        },
+        {
+          "USER_ID": "cmacast2",
+          "USER_ID_NAME": "cmacast2",
+          "FILE_COUNT": 16197,
+          "FILESIZE_COUNT": 59353008396
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_A",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 50259,
+          "FILESIZE_COUNT": 40510843606
+        },
+        {
+          "USER_ID": "local_host_2",
+          "USER_ID_NAME": "local_host_2",
+          "FILE_COUNT": 584,
+          "FILESIZE_COUNT": 31462305958
+        },
+        {
+          "USER_ID": "nmic_qxcs_g3",
+          "USER_ID_NAME": "nmic_qxcs_g3",
+          "FILE_COUNT": 441,
+          "FILESIZE_COUNT": 18924744337
+        },
+        {
+          "USER_ID": "kjcs_bexa_cts",
+          "USER_ID_NAME": "陕西信息中心",
+          "FILE_COUNT": 160,
+          "FILESIZE_COUNT": 16646762240
+        },
+        {
+          "USER_ID": "qxt_taihaizx",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 311,
+          "FILESIZE_COUNT": 15033909050
+        },
+        {
+          "USER_ID": "tcfw_babj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 18610,
+          "FILESIZE_COUNT": 15015379853
+        },
+        {
+          "USER_ID": "CMADAAS_NAS10",
+          "USER_ID_NAME": "CMADAAS_NAS10",
+          "FILE_COUNT": 1540,
+          "FILESIZE_COUNT": 8214446410
+        },
+        {
+          "USER_ID": "behz_asiangames",
+          "USER_ID_NAME": "浙江信息中心",
+          "FILE_COUNT": 1501,
+          "FILESIZE_COUNT": 7221990335
+        },
+        {
+          "USER_ID": "nmic_drd_yjsu",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1244,
+          "FILESIZE_COUNT": 7085518333
+        },
+        {
+          "USER_ID": "Internet_96_gts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 9528,
+          "FILESIZE_COUNT": 6654197567
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_B",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1917,
+          "FILESIZE_COUNT": 5119173578
+        },
+        {
+          "USER_ID": "kjcs_DMZ",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 41560,
+          "FILESIZE_COUNT": 4837012443
+        },
+        {
+          "USER_ID": "kjcs_bccd",
+          "USER_ID_NAME": "四川信息中心",
+          "FILE_COUNT": 527,
+          "FILESIZE_COUNT": 4693281968
+        },
+        {
+          "USER_ID": "cmacast2fy2gsvs",
+          "USER_ID_NAME": "cmacast2fy2gsvs",
+          "FILE_COUNT": 80864,
+          "FILESIZE_COUNT": 4633588064
+        },
+        {
+          "USER_ID": "internet_96_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1001,
+          "FILESIZE_COUNT": 4153672562
+        },
+        {
+          "USER_ID": "GTS_NSMC",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1001,
+          "FILESIZE_COUNT": 4153672562
+        },
+        {
+          "USER_ID": "tcfw_service",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 3355,
+          "FILESIZE_COUNT": 1872100190
+        },
+        {
+          "USER_ID": "nmic_pi_xubin",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 517,
+          "FILESIZE_COUNT": 1739341770
+        },
+        {
+          "USER_ID": "nmic_pi_g1_sat",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 88,
+          "FILESIZE_COUNT": 1558720523
+        },
+        {
+          "USER_ID": "nmic_piop_ncc_zhuxj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 3,
+          "FILESIZE_COUNT": 1536149504
+        },
+        {
+          "USER_ID": "nmic_YeWuNeiWang_rad",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 4405,
+          "FILESIZE_COUNT": 1534127042
+        },
+        {
+          "USER_ID": "STHBGC",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 54,
+          "FILESIZE_COUNT": 1451254906
+        },
+        {
+          "USER_ID": "nmic_qxcs_g3_sat",
+          "USER_ID_NAME": "nmic_qxcs_g3_sat",
+          "FILE_COUNT": 50,
+          "FILESIZE_COUNT": 1064302736
+        },
+        {
+          "USER_ID": "becc_jl",
+          "USER_ID_NAME": "吉林信息中心",
+          "FILE_COUNT": 66,
+          "FILESIZE_COUNT": 801829509
+        },
+        {
+          "USER_ID": "bsep_nmc_太平洋",
+          "USER_ID_NAME": "bsep_nmc_太平洋",
+          "FILE_COUNT": 6452,
+          "FILESIZE_COUNT": 713583067
+        },
+        {
+          "USER_ID": "MICAPS4_6",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 82,
+          "FILESIZE_COUNT": 318308787
+        },
+        {
+          "USER_ID": "TCZX_S_CY",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 1909,
+          "FILESIZE_COUNT": 245952904
+        },
+        {
+          "USER_ID": "MICAPS4_3",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 153,
+          "FILESIZE_COUNT": 199566339
+        },
+        {
+          "USER_ID": "业务内网_ZLS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 219,
+          "FILESIZE_COUNT": 177856560
+        },
+        {
+          "USER_ID": "GISC",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 38,
+          "FILESIZE_COUNT": 166907497
+        },
+        {
+          "USER_ID": "local_bcuq",
+          "USER_ID_NAME": "local_bcuq",
+          "FILE_COUNT": 3268,
+          "FILESIZE_COUNT": 81653555
+        },
+        {
+          "USER_ID": "国际GTS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 15529,
+          "FILESIZE_COUNT": 81357953
+        },
+        {
+          "USER_ID": "培训中心",
+          "USER_ID_NAME": "干部学院",
+          "FILE_COUNT": 116,
+          "FILESIZE_COUNT": 74344114
+        },
+        {
+          "USER_ID": "TCZX_W",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 212,
+          "FILESIZE_COUNT": 55346985
+        },
+        {
+          "USER_ID": "气科院_RAD",
+          "USER_ID_NAME": "气科院",
+          "FILE_COUNT": 186,
+          "FILESIZE_COUNT": 50336632
+        },
+        {
+          "USER_ID": "HuaFeng_tqw",
+          "USER_ID_NAME": "华风",
+          "FILE_COUNT": 189,
+          "FILESIZE_COUNT": 40076702
+        },
+        {
+          "USER_ID": "S2MMS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 28,
+          "FILESIZE_COUNT": 12975397
+        },
+        {
+          "USER_ID": "MICAPS4_1",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 1,
+          "FILESIZE_COUNT": 2206856
+        },
+        {
+          "USER_ID": "BCSH新一代",
+          "USER_ID_NAME": "上海信息中心",
+          "FILE_COUNT": 3,
+          "FILESIZE_COUNT": 1645458
+        },
+        {
+          "USER_ID": "kjcs_sate",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1,
+          "FILESIZE_COUNT": 681787
+        },
+        {
+          "USER_ID": "huaxin",
+          "USER_ID_NAME": "华信",
+          "FILE_COUNT": 1,
+          "FILESIZE_COUNT": 681787
+        },
+        {
+          "USER_ID": "kjcs_xzys_63",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1,
+          "FILESIZE_COUNT": 681787
+        },
+        {
+          "USER_ID": "local_rad",
+          "USER_ID_NAME": "local_rad",
+          "FILE_COUNT": 1,
+          "FILESIZE_COUNT": 681787
+        },
+        {
+          "USER_ID": "nmic_pi_g1_rad",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1,
+          "FILESIZE_COUNT": 681787
+        },
+        {
+          "USER_ID": "培训中心_abroad",
+          "USER_ID_NAME": "干部学院",
+          "FILE_COUNT": 2,
+          "FILESIZE_COUNT": 222656
+        },
+        {
+          "USER_ID": "nmic_int_met",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 6,
+          "FILESIZE_COUNT": 26883
+        },
+        {
+          "USER_ID": "qxt_RADA_forecast",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 6,
+          "FILESIZE_COUNT": 348
+        },
+        {
+          "USER_ID": "探测中心_w_m",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 6,
+          "FILESIZE_COUNT": 348
+        }
+      ],
+      "PERIOD_DATE": 20231206,
+      "DATA_TYPE_FIRST": "T",
+      "DATA_TYPE_FIRST_NAME": "T",
+      "FILE_COUNT": 375994,
+      "FILESIZE_COUNT": 652140274628
+    },
+    {
+      "detail": [
+        {
+          "USER_ID": "数据归档_new",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 67978,
+          "FILESIZE_COUNT": 94159103964
+        },
+        {
+          "USER_ID": "CMADAAS_NAS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 6043,
+          "FILESIZE_COUNT": 84055299136
+        },
+        {
+          "USER_ID": "nmic_qxcs_g3",
+          "USER_ID_NAME": "nmic_qxcs_g3",
+          "FILE_COUNT": 5533,
+          "FILESIZE_COUNT": 71640541844
+        },
+        {
+          "USER_ID": "nmic_pi_g1",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 3866,
+          "FILESIZE_COUNT": 48899399826
+        },
+        {
+          "USER_ID": "XiaZaiPingTai_ftp_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 641,
+          "FILESIZE_COUNT": 11583933044
+        },
+        {
+          "USER_ID": "tcfw_service",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 826,
+          "FILESIZE_COUNT": 8247998940
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_B",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 678,
+          "FILESIZE_COUNT": 7010873345
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_A",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 38990,
+          "FILESIZE_COUNT": 6346143847
+        },
+        {
+          "USER_ID": "cmacast2",
+          "USER_ID_NAME": "cmacast2",
+          "FILE_COUNT": 1576,
+          "FILESIZE_COUNT": 6316412248
+        },
+        {
+          "USER_ID": "MICAPS4_3",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 897,
+          "FILESIZE_COUNT": 5886594766
+        },
+        {
+          "USER_ID": "kjcs_cts",
+          "USER_ID_NAME": "kjcs_cts",
+          "FILE_COUNT": 1065,
+          "FILESIZE_COUNT": 5823298874
+        },
+        {
+          "USER_ID": "卫星中心_swgo新",
+          "USER_ID_NAME": "卫星中心",
+          "FILE_COUNT": 60187,
+          "FILESIZE_COUNT": 3552167290
+        },
+        {
+          "USER_ID": "tcfw_babj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 27346,
+          "FILESIZE_COUNT": 1141130300
+        },
+        {
+          "USER_ID": "MICAPS4_3_1",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 166,
+          "FILESIZE_COUNT": 51874311
+        },
+        {
+          "USER_ID": "业务内网_ZLS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 2,
+          "FILESIZE_COUNT": 6034876
+        }
+      ],
+      "PERIOD_DATE": 20231206,
+      "DATA_TYPE_FIRST": "Z",
+      "DATA_TYPE_FIRST_NAME": "其他",
+      "FILE_COUNT": 215794,
+      "FILESIZE_COUNT": 354720806611
+    },
+    {
+      "detail": [
+        {
+          "USER_ID": "CMADAAS_DPC_B",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 238192,
+          "FILESIZE_COUNT": 13641480046
+        },
+        {
+          "USER_ID": "数据归档_new",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 213926,
+          "FILESIZE_COUNT": 10343190809
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_A",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 122434,
+          "FILESIZE_COUNT": 5966420421
+        },
+        {
+          "USER_ID": "cmacast2",
+          "USER_ID_NAME": "cmacast2",
+          "FILE_COUNT": 16448,
+          "FILESIZE_COUNT": 2406312239
+        },
+        {
+          "USER_ID": "TCZX_W",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 16184,
+          "FILESIZE_COUNT": 2403443126
+        },
+        {
+          "USER_ID": "气科院_RAD",
+          "USER_ID_NAME": "气科院",
+          "FILE_COUNT": 16145,
+          "FILESIZE_COUNT": 2384414283
+        },
+        {
+          "USER_ID": "tcfw_babj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 10455,
+          "FILESIZE_COUNT": 8450942
+        },
+        {
+          "USER_ID": "国际GTS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 276,
+          "FILESIZE_COUNT": 259881
+        },
+        {
+          "USER_ID": "kjcs_htht",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 62,
+          "FILESIZE_COUNT": 81000
+        }
+      ],
+      "PERIOD_DATE": 20231206,
+      "DATA_TYPE_FIRST": "G",
+      "DATA_TYPE_FIRST_NAME": "大气成分",
+      "FILE_COUNT": 634122,
+      "FILESIZE_COUNT": 37154052747
+    },
+    {
+      "detail": [
+        {
+          "USER_ID": "XiaZaiPingTai_ftp_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1192,
+          "FILESIZE_COUNT": 5025599901
+        },
+        {
+          "USER_ID": "数据归档_new",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 2133,
+          "FILESIZE_COUNT": 2488860741
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_A",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 36485,
+          "FILESIZE_COUNT": 2055914664
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_B",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1980,
+          "FILESIZE_COUNT": 1904029923
+        },
+        {
+          "USER_ID": "cmacast2",
+          "USER_ID_NAME": "cmacast2",
+          "FILE_COUNT": 1033,
+          "FILESIZE_COUNT": 1352262878
+        },
+        {
+          "USER_ID": "tcfw_service",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 765,
+          "FILESIZE_COUNT": 659180572
+        },
+        {
+          "USER_ID": "kjcs_cts",
+          "USER_ID_NAME": "kjcs_cts",
+          "FILE_COUNT": 331,
+          "FILESIZE_COUNT": 580968645
+        },
+        {
+          "USER_ID": "MICAPS4_3",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 422,
+          "FILESIZE_COUNT": 341351158
+        },
+        {
+          "USER_ID": "CMADAAS_NAS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 940,
+          "FILESIZE_COUNT": 106502973
+        },
+        {
+          "USER_ID": "业务内网_ZLS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 84,
+          "FILESIZE_COUNT": 58001529
+        },
+        {
+          "USER_ID": "MICAPS4_1",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 100,
+          "FILESIZE_COUNT": 49856406
+        },
+        {
+          "USER_ID": "kjcs_DMZ",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 446,
+          "FILESIZE_COUNT": 47127528
+        },
+        {
+          "USER_ID": "qxt_nafp_ec",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 67,
+          "FILESIZE_COUNT": 45994228
+        },
+        {
+          "USER_ID": "气象台_RFFC",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 280,
+          "FILESIZE_COUNT": 20851495
+        },
+        {
+          "USER_ID": "STHBGC",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 19,
+          "FILESIZE_COUNT": 13733951
+        },
+        {
+          "USER_ID": "气科院_RAD",
+          "USER_ID_NAME": "气科院",
+          "FILE_COUNT": 50,
+          "FILESIZE_COUNT": 12734762
+        },
+        {
+          "USER_ID": "培训中心",
+          "USER_ID_NAME": "干部学院",
+          "FILE_COUNT": 48,
+          "FILESIZE_COUNT": 12733470
+        },
+        {
+          "USER_ID": "qxt_空气质量",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 39,
+          "FILESIZE_COUNT": 4621851
+        },
+        {
+          "USER_ID": "qxt_RADA_forecast",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 51,
+          "FILESIZE_COUNT": 17568
+        },
+        {
+          "USER_ID": "探测中心_w_m",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 7,
+          "FILESIZE_COUNT": 4522
+        },
+        {
+          "USER_ID": "qxt_rffc_6h",
+          "USER_ID_NAME": "气象中心",
+          "FILE_COUNT": 9,
+          "FILESIZE_COUNT": 2919
+        },
+        {
+          "USER_ID": "tcfw_babj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 12,
+          "FILESIZE_COUNT": 2671
+        }
+      ],
+      "PERIOD_DATE": 20231206,
+      "DATA_TYPE_FIRST": "M",
+      "DATA_TYPE_FIRST_NAME": "服务",
+      "FILE_COUNT": 46493,
+      "FILESIZE_COUNT": 14780354355
+    },
+    {
+      "detail": [
+        {
+          "USER_ID": "CMADAAS_DPC_A",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 216704,
+          "FILESIZE_COUNT": 5095352416
+        },
+        {
+          "USER_ID": "数据归档_new",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 58035,
+          "FILESIZE_COUNT": 2181959154
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_B",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1923,
+          "FILESIZE_COUNT": 1891760064
+        },
+        {
+          "USER_ID": "cmacast2",
+          "USER_ID_NAME": "cmacast2",
+          "FILE_COUNT": 46993,
+          "FILESIZE_COUNT": 226579791
+        },
+        {
+          "USER_ID": "气科院_RAD",
+          "USER_ID_NAME": "气科院",
+          "FILE_COUNT": 22924,
+          "FILESIZE_COUNT": 98841457
+        },
+        {
+          "USER_ID": "kjcs_cts",
+          "USER_ID_NAME": "kjcs_cts",
+          "FILE_COUNT": 22064,
+          "FILESIZE_COUNT": 86624744
+        },
+        {
+          "USER_ID": "tcfw_service",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 22159,
+          "FILESIZE_COUNT": 86588840
+        },
+        {
+          "USER_ID": "TCZX_W",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 21604,
+          "FILESIZE_COUNT": 86235512
+        },
+        {
+          "USER_ID": "local_host_2",
+          "USER_ID_NAME": "local_host_2",
+          "FILE_COUNT": 16949,
+          "FILESIZE_COUNT": 84236937
+        },
+        {
+          "USER_ID": "tcfw_babj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 7,
+          "FILESIZE_COUNT": 1863134
+        }
+      ],
+      "PERIOD_DATE": 20231206,
+      "DATA_TYPE_FIRST": "E",
+      "DATA_TYPE_FIRST_NAME": "农气",
+      "FILE_COUNT": 429362,
+      "FILESIZE_COUNT": 9840042049
+    },
+    {
+      "detail": [
+        {
+          "USER_ID": "数据归档_new",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 15524,
+          "FILESIZE_COUNT": 2416615449
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_A",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 69076,
+          "FILESIZE_COUNT": 1711998359
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_B",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1633,
+          "FILESIZE_COUNT": 1210890916
+        },
+        {
+          "USER_ID": "nmic_pi_g1",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 106,
+          "FILESIZE_COUNT": 1210435093
+        },
+        {
+          "USER_ID": "tcfw_service",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 106,
+          "FILESIZE_COUNT": 1210435093
+        },
+        {
+          "USER_ID": "CMADAAS_NAS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 10,
+          "FILESIZE_COUNT": 1144205084
+        },
+        {
+          "USER_ID": "cmacast2",
+          "USER_ID_NAME": "cmacast2",
+          "FILE_COUNT": 11701,
+          "FILESIZE_COUNT": 15723291
+        },
+        {
+          "USER_ID": "tcfw_babj",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 4270,
+          "FILESIZE_COUNT": 5044129
+        },
+        {
+          "USER_ID": "kjcs_htht",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 3791,
+          "FILESIZE_COUNT": 758679
+        },
+        {
+          "USER_ID": "TCZX_W",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 3784,
+          "FILESIZE_COUNT": 756616
+        },
+        {
+          "USER_ID": "国际GTS",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 8,
+          "FILESIZE_COUNT": 15300
+        }
+      ],
+      "PERIOD_DATE": 20231206,
+      "DATA_TYPE_FIRST": "C",
+      "DATA_TYPE_FIRST_NAME": "海洋",
+      "FILE_COUNT": 110009,
+      "FILESIZE_COUNT": 8926878009
+    },
+    {
+      "detail": [
+        {
+          "USER_ID": "数据归档_new",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 99093,
+          "FILESIZE_COUNT": 182838392
+        },
+        {
+          "USER_ID": "cmacast2",
+          "USER_ID_NAME": "cmacast2",
+          "FILE_COUNT": 50074,
+          "FILESIZE_COUNT": 93432551
+        },
+        {
+          "USER_ID": "CMADAAS_DPC_A",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1139,
+          "FILESIZE_COUNT": 968585
+        },
+        {
+          "USER_ID": "TCZX_W",
+          "USER_ID_NAME": "探测中心",
+          "FILE_COUNT": 378,
+          "FILESIZE_COUNT": 416582
+        },
+        {
+          "USER_ID": "气科院_RAD",
+          "USER_ID_NAME": "气科院",
+          "FILE_COUNT": 1,
+          "FILESIZE_COUNT": 348722
+        },
+        {
+          "USER_ID": "XiaZaiPingTai_ftp_cts",
+          "USER_ID_NAME": "信息中心",
+          "FILE_COUNT": 1,
+          "FILESIZE_COUNT": 6383
+        }
+      ],
+      "PERIOD_DATE": 20231206,
+      "DATA_TYPE_FIRST": "D",
+      "DATA_TYPE_FIRST_NAME": "辐射",
+      "FILE_COUNT": 150686,
+      "FILESIZE_COUNT": 278011215
+    }
+  ],
+  "total": 12
+}

@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@uyun/ushow": "^0.0.28",
-    "echarts": "^4.2.1",
+    "echarts": "^5.4.3",
     "lodash": "^4.17.15"
   },
   "devDependencies": {

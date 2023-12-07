@@ -37,6 +37,7 @@ export function handleData(data = defaultData, config = dataKeyMap) {
   const legendData = data[filenameKey].data
   const seriesData = []
   const categoryData = []
+
   data[filenameKey].data.forEach((name, index) => {
     const detailsData = data[detailKey].data
 

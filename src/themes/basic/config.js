@@ -3,26 +3,31 @@ export default function (themeType, SHOWUTILS) {
 
   return [
     {
-      title: intl.formatMessage({ id: 'column', defaultMessage: '列表' }),
-      type: 'list',
+      title: intl.formatMessage({
+        id: 'graph-bubble',
+        defaultMessage: '气泡图'
+      }),
+      type: 'position',
       fields: [
         {
-          name: 'series_columns',
+          name: 'series_size',
           label: intl.formatMessage({
-            id: 'cts strategy list columns',
-            defaultMessage: '列数'
+            id: 'bubble-size',
+            defaultMessage: '气泡大小'
           }),
           type: 'number',
-          value: 2
+          props: { min: 0.1, max: 1000 },
+          value: 1
         },
         {
-          name: 'series_pageSize',
+          name: 'series_gravity',
           label: intl.formatMessage({
-            id: 'cts strategy list page size',
-            defaultMessage: '每页个数'
+            id: 'bubble-gravity',
+            defaultMessage: '重力大小'
           }),
           type: 'number',
-          value: 6
+          props: { min: 0.01, max: 10 },
+          value: 1
         }
       ]
     }

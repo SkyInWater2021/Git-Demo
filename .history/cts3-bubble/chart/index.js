@@ -35,7 +35,7 @@ export const Chart = function (Base) {
         legend: [
           {
             data: this.parserData.legendData,
-            bottom: 10,
+            bottom: 0,
             icon: 'circle',
             itemWidth: 12,
             itemHeight: 12,
