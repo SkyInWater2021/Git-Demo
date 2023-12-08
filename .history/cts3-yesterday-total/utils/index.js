@@ -28,13 +28,3 @@ export function formatArrayData(data = []) {
 
   return target
 }
-
-export function formatTime(str) {
-  const date = String(str)
-  const year = date.slice(0, 4) + '年'
-  const month = date.slice(4, 6) + '月'
-  const day = date.slice(6, 8) + '日'
-  const hour = date.slice(8) + '时'
-
-  return year + month + day + hour
-}

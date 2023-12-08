@@ -1,0 +1,47 @@
+.cts3-yesterday__wrapper_two {
+  width: 100%;
+  height: 100%;
+}
+
+.cts3-yesterday__wrapper_two .total-current {
+  display: flex;
+  height: 27px;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.cts3-yesterday__wrapper_two .total-current .total-chart {
+  display: flex;
+}
+
+.cts3-yesterday__wrapper_two .total-chart__item {
+  width: 20px;
+  text-align: center;
+  line-height: 28px;
+  margin-right: 2px;
+  background: url(../imgs/number-bg.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.cts3-yesterday__wrapper_two .total-wave {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  font-size: 14px;
+  box-shadow: inset 0 0 4px 1px currentColor;
+}
+
+.cts3-yesterday__wrapper_two .average-container {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+.cts3-yesterday__wrapper_two .average-container img {
+  margin-right: 6px;
+  width: 12px;
+  height: 12px;
+}
