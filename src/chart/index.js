@@ -102,13 +102,13 @@ export const Chart = function (Base) {
             text: node.depth <= 1 ? '' : node.data.label,
             width: node.r * 1.3,
             overflow: node.r > 10 ? '' : 'truncate',
-            fontSize: node.r > 10 ? node.r / 2 : node.r / 3
+            fontSize: node.r > 10 ? Math.min(node.r / 2, 20) : node.r / 3
           },
           emphasis: {
             style: {
               overflow: null,
               text: node.data.label,
-              fontSize: Math.max(node.r / 1.5, 12)
+              fontSize: Math.max(node.r / 1.8, 12)
             }
           }
         },
