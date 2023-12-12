@@ -1,0 +1,36 @@
+.cts3-systemStatus__wrapper_two {
+  width: 100%;
+  height: 100%;
+}
+
+.cts3-systemStatus__wrapper_two .pie-item__container {
+  display: flex;
+}
+
+.cts3-systemStatus__wrapper_two .pie-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cts3-systemStatus__wrapper_two .pie-title {
+  color: white;
+  text-align: center;
+  lien-height: 40px;
+}
+
+.cts3-systemStatus__wrapper_two .pie-chart {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.cts3-systemStatus__wrapper_two .pie-chart .center-img {
+  position: absolute;
+  top: 21px;
+  left: 19px;
+  width: 58px;
+  height: 58px;
+  background-size: 100%;
+}

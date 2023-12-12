@@ -1,0 +1,41 @@
+{
+  "cache": 1,
+  "code": 200,
+  "msg": "正常",
+  "data": [
+    {
+      "tenant_id": "e10adc3949ba59abbe56e057f2gg88dd",
+      "type": "SYSTEM.ALARM.EI",
+      "receive_time": 1701488845282,
+      "message": "CTS2的EI告警信息",
+      "version": null,
+      "sender": "10.40.120.75",
+      "name": "CTS2的EI告警信息",
+      "gateway_ip": "10.20.98.26",
+      "SYSTEM": "CTS2",
+      "KComment": "主机10.40.120.62在发送Z_SATE_C_BAWX_20231130230038_P_FY3E_HIRAS_GRAN_L1_20231130_2215_014KM_V0.HDF到sftp://trans.sc-1.hpc.cma:23512//g3/COMMONDATA//obs/RAW/SATE/FY3/FY3E/HIRAS/L1/2023/20231130失败！FTP协议交互信息：* Trying 10.40.150.33... * Connected to trans.sc-1.hpc.cma (10.40.150.33) port 23512 (#0) * SSH MD5 fingerprint: 8097d425f1202fd2a4c99acb00816d47 * SSH authentication methods available: publickey,gssapi-keyex,gssapi-with-mic,password * Using SSH private key file '/home/cts/.ssh/id_rsa' * SSH public key authentication failed: Unable to open public key file * Initialized password authentication * Authentication complete * Creating directory '/' * Creating directory '//g3' * Creating directory '//g3/COMMONDATA' * Creating directory '//g3/COMMONDATA/' * Creating directory '//g3/COMMONDATA//obs' * Creating directory '//g3/COMMONDATA//obs/RAW' * Creating directory '//g3/COMMONDATA//obs/RAW/SATE' * Creating directory '//g3/COMMONDATA//obs/RAW/SATE/FY3' * Creating directory '//g3/COMMONDATA//obs/RAW/SATE/FY3/FY3E' * Creating directory '//g3/COMMONDATA//obs/RAW/SATE/FY3/FY3E/HIRAS' * Creating directory '//g3/COMMONDATA//obs/RAW/SATE/FY3/FY3E/HIRAS/L1' * Creating directory '//g3/COMMONDATA//obs/RAW/SATE/FY3/FY3E/HIRAS/L1/2023' * Creating directory '//g3/COMMONDATA//obs/RAW/SATE/FY3/FY3E/HIRAS/L1/2023/20231130' * Creating the dir/file failed: No such file or directory * Connection #0 to host trans.sc-1.hpc.cma left intact",
+      "PROCESS_LINK": "",
+      "EVENT_TYPE": "OP_CTS_C_1-35-02",
+      "EVENT_LEVEL": "01",
+      "EVENT_TRAG": "网络异常或用户远端服务中断",
+      "EVENT_SUGGEST": "0,0,0,1$请通过人工补发或重发该文件",
+      "EVENT_EXT2": "10.40.120.62",
+      "EVENT_EXT1": "",
+      "EVENT_TIME": "2023-12-02 03:47:25",
+      "ORG_TIME": "20231202T034725",
+      "KResult": "文件分发失败",
+      "GROUP_ID": "OP_CTS_C_01",
+      "EVENT_CONTROL": "0",
+      "KEvent": "文件分发失败",
+      "MSG_TYPE": "03",
+      "KObject": "正常分发模块",
+      "DATA_FROM": "BABJ",
+      "EVENT_TITLE": "文件分发失败",
+      "TITLE_COUNT": 184265,
+      "KIndex": "dist-nmic_qxcs_g3_sat",
+      "COL_TYPE": "02",
+      "occur_time": 1701488845000
+    }
+  ],
+  "total": 1
+}

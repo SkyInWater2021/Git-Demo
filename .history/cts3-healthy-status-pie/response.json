@@ -1,0 +1,17 @@
+{
+  "cache": 1,
+  "code": 200,
+  "msg": "正常",
+  "data": {
+    "linkName": "接入",
+    "linkPct": 0.63,
+    "colName": "收集",
+    "colPct": 0.38,
+    "dealName": "处理",
+    "dealPct": 0.61,
+    "distName": "分发",
+    "distPct": 0.87,
+    "utime": 1702361316804
+  },
+  "total": 0
+}

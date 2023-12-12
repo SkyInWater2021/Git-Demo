@@ -1,0 +1,316 @@
+{
+  "cache": 1,
+  "code": 200,
+  "msg": "正常",
+  "data": [
+    {
+      "flumePct": 0.27687453662378414,
+      "periodDate": 1702360800000,
+      "policyType": 0,
+      "ip": "127.0.0.0",
+      "node": "node00"
+    },
+    {
+      "flumePct": 0.8864262342228475,
+      "periodDate": 1702357200000,
+      "policyType": 0,
+      "ip": "127.0.0.0",
+      "node": "node00"
+    },
+    {
+      "flumePct": 0.22732302442217256,
+      "periodDate": 1702353600000,
+      "policyType": 0,
+      "ip": "127.0.0.0",
+      "node": "node00"
+    },
+    {
+      "flumePct": 0.63527793652649,
+      "periodDate": 1702350000000,
+      "policyType": 0,
+      "ip": "127.0.0.0",
+      "node": "node00"
+    },
+    {
+      "flumePct": 0.24117876196857368,
+      "periodDate": 1702346400000,
+      "policyType": 0,
+      "ip": "127.0.0.0",
+      "node": "node00"
+    },
+    {
+      "flumePct": 0.18681674455472275,
+      "periodDate": 1702342800000,
+      "policyType": 0,
+      "ip": "127.0.0.0",
+      "node": "node00"
+    },
+    {
+      "flumePct": 0.9204750225313287,
+      "periodDate": 1702339200000,
+      "policyType": 0,
+      "ip": "127.0.0.0",
+      "node": "node00"
+    },
+    {
+      "flumePct": 0.26109715086697316,
+      "periodDate": 1702335600000,
+      "policyType": 0,
+      "ip": "127.0.0.0",
+      "node": "node00"
+    },
+    {
+      "flumePct": 0.480169415866021,
+      "periodDate": 1702332000000,
+      "policyType": 0,
+      "ip": "127.0.0.0",
+      "node": "node00"
+    },
+    {
+      "flumePct": 0.24457534630617983,
+      "periodDate": 1702328400000,
+      "policyType": 0,
+      "ip": "127.0.0.0",
+      "node": "node00"
+    },
+    {
+      "flumePct": 0.45036445492292954,
+      "periodDate": 1702324800000,
+      "policyType": 0,
+      "ip": "127.0.0.0",
+      "node": "node00"
+    },
+    {
+      "flumePct": 0.08247125848579306,
+      "periodDate": 1702360800000,
+      "policyType": 1,
+      "ip": "127.0.0.1",
+      "node": "node01"
+    },
+    {
+      "flumePct": 0.6555566011487746,
+      "periodDate": 1702357200000,
+      "policyType": 1,
+      "ip": "127.0.0.1",
+      "node": "node01"
+    },
+    {
+      "flumePct": 0.5460346569771746,
+      "periodDate": 1702353600000,
+      "policyType": 1,
+      "ip": "127.0.0.1",
+      "node": "node01"
+    },
+    {
+      "flumePct": 0.1562971790193607,
+      "periodDate": 1702350000000,
+      "policyType": 1,
+      "ip": "127.0.0.1",
+      "node": "node01"
+    },
+    {
+      "flumePct": 0.9206270171622909,
+      "periodDate": 1702346400000,
+      "policyType": 1,
+      "ip": "127.0.0.1",
+      "node": "node01"
+    },
+    {
+      "flumePct": 0.008817623009940712,
+      "periodDate": 1702342800000,
+      "policyType": 1,
+      "ip": "127.0.0.1",
+      "node": "node01"
+    },
+    {
+      "flumePct": 0.6631290122411811,
+      "periodDate": 1702339200000,
+      "policyType": 1,
+      "ip": "127.0.0.1",
+      "node": "node01"
+    },
+    {
+      "flumePct": 0.12133286023608081,
+      "periodDate": 1702335600000,
+      "policyType": 1,
+      "ip": "127.0.0.1",
+      "node": "node01"
+    },
+    {
+      "flumePct": 0.300057214409575,
+      "periodDate": 1702332000000,
+      "policyType": 1,
+      "ip": "127.0.0.1",
+      "node": "node01"
+    },
+    {
+      "flumePct": 0.944114086432047,
+      "periodDate": 1702328400000,
+      "policyType": 1,
+      "ip": "127.0.0.1",
+      "node": "node01"
+    },
+    {
+      "flumePct": 0.41471224566343035,
+      "periodDate": 1702324800000,
+      "policyType": 1,
+      "ip": "127.0.0.1",
+      "node": "node01"
+    },
+    {
+      "flumePct": 0.2718687207508078,
+      "periodDate": 1702360800000,
+      "policyType": 2,
+      "ip": "127.0.0.2",
+      "node": "node02"
+    },
+    {
+      "flumePct": 0.5270979854713231,
+      "periodDate": 1702357200000,
+      "policyType": 2,
+      "ip": "127.0.0.2",
+      "node": "node02"
+    },
+    {
+      "flumePct": 0.6249579492978385,
+      "periodDate": 1702353600000,
+      "policyType": 2,
+      "ip": "127.0.0.2",
+      "node": "node02"
+    },
+    {
+      "flumePct": 0.6692874134875022,
+      "periodDate": 1702350000000,
+      "policyType": 2,
+      "ip": "127.0.0.2",
+      "node": "node02"
+    },
+    {
+      "flumePct": 0.8396207086503101,
+      "periodDate": 1702346400000,
+      "policyType": 2,
+      "ip": "127.0.0.2",
+      "node": "node02"
+    },
+    {
+      "flumePct": 0.5570283876406944,
+      "periodDate": 1702342800000,
+      "policyType": 2,
+      "ip": "127.0.0.2",
+      "node": "node02"
+    },
+    {
+      "flumePct": 0.981385928251673,
+      "periodDate": 1702339200000,
+      "policyType": 2,
+      "ip": "127.0.0.2",
+      "node": "node02"
+    },
+    {
+      "flumePct": 0.15197169145825085,
+      "periodDate": 1702335600000,
+      "policyType": 2,
+      "ip": "127.0.0.2",
+      "node": "node02"
+    },
+    {
+      "flumePct": 0.11059277494283637,
+      "periodDate": 1702332000000,
+      "policyType": 2,
+      "ip": "127.0.0.2",
+      "node": "node02"
+    },
+    {
+      "flumePct": 0.6848780244238397,
+      "periodDate": 1702328400000,
+      "policyType": 2,
+      "ip": "127.0.0.2",
+      "node": "node02"
+    },
+    {
+      "flumePct": 0.9003773299846961,
+      "periodDate": 1702324800000,
+      "policyType": 2,
+      "ip": "127.0.0.2",
+      "node": "node02"
+    },
+    {
+      "flumePct": 0.5960590021411888,
+      "periodDate": 1702360800000,
+      "policyType": 3,
+      "ip": "127.0.0.3",
+      "node": "node03"
+    },
+    {
+      "flumePct": 0.5272272078038176,
+      "periodDate": 1702357200000,
+      "policyType": 3,
+      "ip": "127.0.0.3",
+      "node": "node03"
+    },
+    {
+      "flumePct": 0.46329440289814783,
+      "periodDate": 1702353600000,
+      "policyType": 3,
+      "ip": "127.0.0.3",
+      "node": "node03"
+    },
+    {
+      "flumePct": 0.5294781894157657,
+      "periodDate": 1702350000000,
+      "policyType": 3,
+      "ip": "127.0.0.3",
+      "node": "node03"
+    },
+    {
+      "flumePct": 0.5883322687442109,
+      "periodDate": 1702346400000,
+      "policyType": 3,
+      "ip": "127.0.0.3",
+      "node": "node03"
+    },
+    {
+      "flumePct": 0.6327798294706443,
+      "periodDate": 1702342800000,
+      "policyType": 3,
+      "ip": "127.0.0.3",
+      "node": "node03"
+    },
+    {
+      "flumePct": 0.15023433269173037,
+      "periodDate": 1702339200000,
+      "policyType": 3,
+      "ip": "127.0.0.3",
+      "node": "node03"
+    },
+    {
+      "flumePct": 0.5620697400593222,
+      "periodDate": 1702335600000,
+      "policyType": 3,
+      "ip": "127.0.0.3",
+      "node": "node03"
+    },
+    {
+      "flumePct": 0.4973156409772077,
+      "periodDate": 1702332000000,
+      "policyType": 3,
+      "ip": "127.0.0.3",
+      "node": "node03"
+    },
+    {
+      "flumePct": 0.05106621714550119,
+      "periodDate": 1702328400000,
+      "policyType": 3,
+      "ip": "127.0.0.3",
+      "node": "node03"
+    },
+    {
+      "flumePct": 0.41990863817233937,
+      "periodDate": 1702324800000,
+      "policyType": 3,
+      "ip": "127.0.0.3",
+      "node": "node03"
+    }
+  ],
+  "total": 0
+}

@@ -197,7 +197,7 @@ export const Chart = function (Base) {
     }
 
     render() {
-      this.el.innerHTML = 'hello world'
+      this.el.innerHTML = ''
       let domEls = ''
       domEls += this.renderChart()
       this.el.innerHTML = `<div style="width: 100%;height: 100%;">

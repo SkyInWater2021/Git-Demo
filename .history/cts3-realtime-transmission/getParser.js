@@ -5,8 +5,6 @@ import { formatArrayData } from './utils'
 export const defaultData = formatArrayData(response.data)
 
 export function handleData(data = defaultData, config) {
-  console.log('🍎🍎🍎getParser调用用🍎🍎🍎:', data)
-
   const xAxisData = uniq(data['PERIOD_DATE'].data).reverse()
 
   const collectionData = []
@@ -17,15 +15,16 @@ export function handleData(data = defaultData, config) {
   data['PROCESS_LINK'].data.forEach((link, index) => {
     if (link === 3) {
       distributeData.push(data['FILE_COUNT'].data[index])
+      downloadDistributeData.push(
+        formatFilesize(data['FILESIZE_COUNT'].data[index])
+      )
     }
 
     if (link === 9) {
       collectionData.push(data['FILE_COUNT'].data[index])
-      downCollectionData.push(data['FILESIZE_COUNT'].data[index])
-    }
-
-    if (link === 10) {
-      downloadDistributeData.push(data['FILESIZE_COUNT'].data[index])
+      downCollectionData.push(
+        formatFilesize(data['FILESIZE_COUNT'].data[index])
+      )
     }
   })
 
@@ -42,4 +41,11 @@ export default function () {
   return function (data, config = {}, map = {}) {
     return handleData(data, config)
   }
+}
+
+export function formatFilesize(num) {
+  const unit = 1024 * 1024 * 1024
+  const res = (num / unit).toFixed(4)
+
+  return res
 }

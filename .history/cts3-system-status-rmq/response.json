@@ -1,0 +1,228 @@
+{
+  "cache": 1,
+  "code": 200,
+  "msg": "正常",
+  "data": [
+    {
+      "mqCount": 684,
+      "periodDate": 1702360800000,
+      "policyType": 0
+    },
+    {
+      "mqCount": 735,
+      "periodDate": 1702357200000,
+      "policyType": 0
+    },
+    {
+      "mqCount": 798,
+      "periodDate": 1702353600000,
+      "policyType": 0
+    },
+    {
+      "mqCount": 583,
+      "periodDate": 1702350000000,
+      "policyType": 0
+    },
+    {
+      "mqCount": 69,
+      "periodDate": 1702346400000,
+      "policyType": 0
+    },
+    {
+      "mqCount": 578,
+      "periodDate": 1702342800000,
+      "policyType": 0
+    },
+    {
+      "mqCount": 784,
+      "periodDate": 1702339200000,
+      "policyType": 0
+    },
+    {
+      "mqCount": 596,
+      "periodDate": 1702335600000,
+      "policyType": 0
+    },
+    {
+      "mqCount": 206,
+      "periodDate": 1702332000000,
+      "policyType": 0
+    },
+    {
+      "mqCount": 509,
+      "periodDate": 1702328400000,
+      "policyType": 0
+    },
+    {
+      "mqCount": 795,
+      "periodDate": 1702324800000,
+      "policyType": 0
+    },
+    {
+      "mqCount": 90,
+      "periodDate": 1702360800000,
+      "policyType": 1
+    },
+    {
+      "mqCount": 534,
+      "periodDate": 1702357200000,
+      "policyType": 1
+    },
+    {
+      "mqCount": 446,
+      "periodDate": 1702353600000,
+      "policyType": 1
+    },
+    {
+      "mqCount": 140,
+      "periodDate": 1702350000000,
+      "policyType": 1
+    },
+    {
+      "mqCount": 474,
+      "periodDate": 1702346400000,
+      "policyType": 1
+    },
+    {
+      "mqCount": 192,
+      "periodDate": 1702342800000,
+      "policyType": 1
+    },
+    {
+      "mqCount": 808,
+      "periodDate": 1702339200000,
+      "policyType": 1
+    },
+    {
+      "mqCount": 229,
+      "periodDate": 1702335600000,
+      "policyType": 1
+    },
+    {
+      "mqCount": 879,
+      "periodDate": 1702332000000,
+      "policyType": 1
+    },
+    {
+      "mqCount": 668,
+      "periodDate": 1702328400000,
+      "policyType": 1
+    },
+    {
+      "mqCount": 797,
+      "periodDate": 1702324800000,
+      "policyType": 1
+    },
+    {
+      "mqCount": 631,
+      "periodDate": 1702360800000,
+      "policyType": 2
+    },
+    {
+      "mqCount": 112,
+      "periodDate": 1702357200000,
+      "policyType": 2
+    },
+    {
+      "mqCount": 496,
+      "periodDate": 1702353600000,
+      "policyType": 2
+    },
+    {
+      "mqCount": 339,
+      "periodDate": 1702350000000,
+      "policyType": 2
+    },
+    {
+      "mqCount": 585,
+      "periodDate": 1702346400000,
+      "policyType": 2
+    },
+    {
+      "mqCount": 495,
+      "periodDate": 1702342800000,
+      "policyType": 2
+    },
+    {
+      "mqCount": 395,
+      "periodDate": 1702339200000,
+      "policyType": 2
+    },
+    {
+      "mqCount": 327,
+      "periodDate": 1702335600000,
+      "policyType": 2
+    },
+    {
+      "mqCount": 44,
+      "periodDate": 1702332000000,
+      "policyType": 2
+    },
+    {
+      "mqCount": 638,
+      "periodDate": 1702328400000,
+      "policyType": 2
+    },
+    {
+      "mqCount": 64,
+      "periodDate": 1702324800000,
+      "policyType": 2
+    },
+    {
+      "mqCount": 534,
+      "periodDate": 1702360800000,
+      "policyType": 3
+    },
+    {
+      "mqCount": 392,
+      "periodDate": 1702357200000,
+      "policyType": 3
+    },
+    {
+      "mqCount": 224,
+      "periodDate": 1702353600000,
+      "policyType": 3
+    },
+    {
+      "mqCount": 552,
+      "periodDate": 1702350000000,
+      "policyType": 3
+    },
+    {
+      "mqCount": 267,
+      "periodDate": 1702346400000,
+      "policyType": 3
+    },
+    {
+      "mqCount": 592,
+      "periodDate": 1702342800000,
+      "policyType": 3
+    },
+    {
+      "mqCount": 119,
+      "periodDate": 1702339200000,
+      "policyType": 3
+    },
+    {
+      "mqCount": 101,
+      "periodDate": 1702335600000,
+      "policyType": 3
+    },
+    {
+      "mqCount": 837,
+      "periodDate": 1702332000000,
+      "policyType": 3
+    },
+    {
+      "mqCount": 737,
+      "periodDate": 1702328400000,
+      "policyType": 3
+    },
+    {
+      "mqCount": 356,
+      "periodDate": 1702324800000,
+      "policyType": 3
+    }
+  ],
+  "total": 0
+}

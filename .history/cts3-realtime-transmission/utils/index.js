@@ -28,3 +28,21 @@ export function formatArrayData(data = []) {
 
   return target
 }
+
+export function formatFileSize(fileSize) {
+  const units = ['B', 'KB', 'M', 'G', 'T', 'P', 'E', 'Z', 'Y']
+
+  let size = fileSize
+  let unitIndex = 0
+
+  while (size >= 1024 && unitIndex < units.length - 1) {
+    size /= 1024
+    unitIndex++
+  }
+
+  const pSize = String(size).split('.')[0].length // 正数部分长度
+  const formattedSize = size.toFixed(5 - pSize)
+  const unit = units[unitIndex]
+
+  return `${formattedSize} ${unit}`
+}

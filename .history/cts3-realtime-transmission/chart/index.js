@@ -17,7 +17,6 @@ export const Chart = function (Base) {
     }
 
     setData(data) {
-      console.log('🍌🍌🍌setData调用🍌🍌🍌')
       this.parserData = data
       this.render()
     }
@@ -78,10 +77,10 @@ export const Chart = function (Base) {
             }</div>`
             const el3 = `<div>${marker}收集文件量: ${
               downCollectionData[dataIndex] ?? 0
-            } Byte</div>`
+            } G</div>`
             const el4 = `<div>${marker}分发文件量: ${
               downloadDistributeData[dataIndex] ?? 0
-            } Byte</div>`
+            } G</div>`
 
             return dateEl + el1 + el2 + el3 + el4
           }
@@ -152,7 +151,7 @@ export const Chart = function (Base) {
             symbol: 'none',
             yAxisIndex: 1,
             itemStyle: { color: '#FFC600' },
-            data: this.downloadDistributeData
+            data: this.parserData.downloadDistributeData
           }
         ]
       }
@@ -178,7 +177,6 @@ export const Chart = function (Base) {
     }
 
     render() {
-      console.log('🍊🍊🍊🍊render调用🍊🍊🍊🍊')
       this.el.innerHTML = ''
       let domEls = ''
       domEls += this.renderChart()
@@ -189,7 +187,7 @@ export const Chart = function (Base) {
 
     resize({ width, height }) {
       // width:868 height:200
-      this.el.style.cssText += `;width:${width}px;height:${height}px;`
+      this.el.style.cssText += `;width:${868}px;height:${200}px;`
     }
 
     setSeriesStyle(config) {
