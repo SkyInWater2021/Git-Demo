@@ -68,7 +68,7 @@ export const Chart = function (Base) {
 
     resize({ width, height }) {
       // width:400 height:165
-      this.el.style.cssText += `;width:${width}px;height:${height}px;`
+      this.el.style.cssText += `;width:${400}px;height:${165}px;`
     }
 
     setSeriesStyle(config) {}

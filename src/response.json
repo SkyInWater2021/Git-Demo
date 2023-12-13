@@ -1,0 +1,32 @@
+{
+  "cache": 1,
+  "code": 200,
+  "msg": "正常",
+  "data": [
+    {
+      "id": "0",
+      "workDir": "work10",
+      "workSpace": "528T",
+      "workNote": "省级",
+      "workMax": "10万，50万",
+      "utime": 1702451053029
+    },
+    {
+      "id": "1",
+      "workDir": "work11",
+      "workSpace": "651T",
+      "workNote": "省级",
+      "workMax": "10万，50万",
+      "utime": 1702451053029
+    },
+    {
+      "id": "2",
+      "workDir": "work12",
+      "workSpace": "787T",
+      "workNote": "省级",
+      "workMax": "10万，50万",
+      "utime": 1702451053029
+    }
+  ],
+  "total": 0
+}

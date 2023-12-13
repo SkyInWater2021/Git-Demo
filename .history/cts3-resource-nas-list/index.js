@@ -1,7 +1,7 @@
 import setBasic, { config, dataConfig } from './themes/basic'
+import { CPN_NAME } from './constant'
 
-export const name = 'ctsResourceNAS'
-
+export const name = CPN_NAME
 export const styleSetGenerators = { basic: config }
 export const dataConfigGenerators = { basic: dataConfig }
 

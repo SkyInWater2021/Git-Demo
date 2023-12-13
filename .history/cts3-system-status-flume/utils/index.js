@@ -36,7 +36,7 @@ export function formatTimeStr(str) {
   const day = date.slice(6, 8) + '日'
   const hour = date.slice(8) + '时'
 
-  return year + month + day + hour
+  return `${year}${month}${day}${hour}`.replace(/(年|月|日时)$/, '') // 移除末尾的无效部分
 }
 
 export function formatDate(date) {

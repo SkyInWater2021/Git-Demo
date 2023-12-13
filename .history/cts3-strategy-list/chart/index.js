@@ -20,7 +20,7 @@ export const Chart = function (Base) {
     renderTitle(type, title) {
       const titleIconEl = `<img src="${titleIcon}" />`
       const titleTypeEl = `<span style="margin:0 5px;min-width:30px">${type}</span>`
-      const titleTextEl = `<span>${title}</span>`
+      const titleTextEl = `<span>${title.replaceAll(',', '<br />')}</span>`
 
       const titleContainer = `<div class="title-container" style="background-image: url(${titleBg})">
         ${titleIconEl}
@@ -43,7 +43,9 @@ export const Chart = function (Base) {
         let listItemEl = titleEls
 
         itemData.forEach((item) => {
-          let contentEl = `<div class="list-icon"></div><span class="list-item__label">${item.itemName}</span>`
+          let contentEl = `<div class="list-icon"></div><span class="list-item__label">
+            ${item.itemName}
+          </span>`
           contentEl += `<span>${item.itemCount ?? 0}</span>`
           listItemEl += `<div class="list-li__container">${contentEl}</div>`
         })
@@ -64,7 +66,7 @@ export const Chart = function (Base) {
     }
 
     resize({ width, height }) {
-      // width:400 height:360
+      // width:454 height:394
       this.el.style.cssText += `;width:${width}px;height:${height}px;`
     }
 

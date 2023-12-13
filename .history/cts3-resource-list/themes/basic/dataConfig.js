@@ -1,9 +1,9 @@
 export default function () {
   return [
     {
-      name: 'detail1',
+      name: 'firstName',
       type: 'select',
-      label: '详情',
+      label: 'label',
       property: 'dimension',
       placeholder: '请选择对应的字段',
       isAddWSNeed: true

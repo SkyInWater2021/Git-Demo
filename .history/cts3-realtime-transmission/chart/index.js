@@ -1,5 +1,5 @@
 import * as echarts from 'echarts'
-import { randomString } from '../utils'
+import { randomString, formatTimeStr } from '../utils'
 import { defaultData, handleData } from '../getParser'
 
 export const Chart = function (Base) {
@@ -63,12 +63,8 @@ export const Chart = function (Base) {
             } = this.parserData
 
             const date = String(this.parserData.xAxisData[dataIndex])
-            const year = date.slice(0, 4) + '年'
-            const month = date.slice(4, 6) + '月'
-            const day = date.slice(6, 8) + '日'
-            const hour = date.slice(8) + '时'
+            const dateEl = `<div>日期: ${formatTimeStr(date)}</div>`
 
-            const dateEl = `<div>日期: ${year + month + day + hour}</div>`
             const el1 = `<div>${marker}收集个数: ${
               collectionData[dataIndex] ?? 0
             }</div>`

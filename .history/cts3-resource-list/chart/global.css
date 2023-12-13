@@ -1,59 +1,55 @@
-.common-cpn__wrapper {
+.cts3-resource__wrapper_two {
   position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-}
-
-.resource-list__container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: flex-start;
+  width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  color: white;
+  overflow-y: hidden;
 }
 
-.resource-list__container .list-item {
+.cts3-resource__wrapper_two .list-item {
   width: 225px;
   height: 82px;
   margin-bottom: 10px;
   color: #defaf8;
 }
-.resource-list__container::-webkit-scrollbar {
+.cts3-resource__wrapper_two::-webkit-scrollbar {
   width: 0;
 }
 
-.resource-list__container .resource-list__title {
+.cts3-resource__wrapper_two .resource-list__title {
   display: flex;
   align-items: center;
   padding: 0 10px;
   line-height: 26px;
 }
-.resource-list__container .resource-list__title img {
+.cts3-resource__wrapper_two .resource-list__title img {
   width: 15px;
   height: 15px;
 }
-.resource-list__container .resource-list__title .title-text {
+.cts3-resource__wrapper_two .resource-list__title .title-text {
   margin-left: 4px;
   text-shadow: 0 0 5px #6be6f4;
 }
 
-.resource-list__container .content-wrapper {
+.cts3-resource__wrapper_two .content-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.resource-list__container .content-wrapper .content-item {
+.cts3-resource__wrapper_two .content-wrapper .content-item {
   width: 50%;
   padding: 3px 5px;
 }
-.resource-list__container .content-wrapper .content-item img {
+.cts3-resource__wrapper_two .content-wrapper .content-item img {
   width: 15px;
   height: 15px;
 }
 
-.resource-list__container .indicator-wrapper {
+.cts3-resource__wrapper_two .indicator-wrapper {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -63,7 +59,7 @@
   justify-content: center;
   z-index: 9;
 }
-.resource-list__container .indicator-wrapper .indicator-item {
+.cts3-resource__wrapper_two .indicator-wrapper .indicator-item {
   width: 20px;
   height: 4px;
   border-radius: 20px;
@@ -72,6 +68,6 @@
   background: #083966;
 }
 
-.resource-list__container .indicator-item__active {
+.cts3-resource__wrapper_two .indicator-item__active {
   background: #00ccff !important;
 }

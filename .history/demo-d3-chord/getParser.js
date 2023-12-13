@@ -4,7 +4,6 @@ import { formatArrayData } from './utils'
 export const defaultData = formatArrayData(response.data)
 
 export function handleData(data = defaultData, config) {
-  console.log(data)
   const labelArr = [...data['USER_ID_NAME'].data]
   labelArr.unshift('国内气象通信系统-CTS')
 

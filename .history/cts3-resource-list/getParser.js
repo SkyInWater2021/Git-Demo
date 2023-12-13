@@ -1,13 +1,10 @@
-import defaultData from './defaultData.json'
+import response from './response.json'
+import { formatShowData } from './utils'
 
-export const dataKeyMap = {
-  detail: 'detail'
-}
+export const defaultData = formatShowData(response.data)
 
-// 处理数据
-export function handleData(data = defaultData, config = dataKeyMap) {
-  console.log(data)
-  return {}
+export function handleData(data = defaultData, config) {
+  return data
 }
 
 export default function () {

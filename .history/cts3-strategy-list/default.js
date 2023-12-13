@@ -28,7 +28,7 @@ const timer = setInterval(() => {
 
       if (secondChild) {
         secondChild.style.width = '100%'
-        secondChild.style.background = 'white'
+        secondChild.style.background = '#030911'
       }
     }
   }

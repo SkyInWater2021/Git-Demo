@@ -32,9 +32,9 @@
 }
 
 .cts3-strategy__wrapper_two .list-item {
-  padding: 10px;
+  padding: 10px 14px;
   width: 50%;
-  height: 188px;
+  height: 190px;
   background: url(../imgs/strategy-bg.png) no-repeat;
   background-size: 100% 100%;
   overflow-y: scroll;

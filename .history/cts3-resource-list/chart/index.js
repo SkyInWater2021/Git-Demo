@@ -1,7 +1,8 @@
-import './global.css'
-import { handleData } from '../getParser'
+import { defaultData, handleData } from '../getParser'
 import { titleIcon, resourceBg } from '../imgs/title-icon'
 import { cyan, yellow, green, purple } from '../imgs/icons'
+import { randomString } from '../utils'
+import './global.css'
 
 export const Chart = function (Base) {
   class Basic extends Base {
@@ -9,43 +10,18 @@ export const Chart = function (Base) {
       super(...arguments)
       this.el = el
 
-      this.parserData = handleData()
+      this.parserData = handleData(defaultData)
 
-      this.demoData = [
-        'N15-babj-cts-01',
-        'N15-babj-cts-02',
-        'N15-babj-cts-03',
-        'N15-babj-cts-04',
-        'N15-babj-cts-05',
-        'N15-babj-cts-06',
-        'N15-babj-cts-07',
-        'N15-babj-cts-08',
-        'N15-babj-cts-09',
-        'N15-babj-cts-10',
-        'N15-babj-cts-11',
-        'N15-babj-cts-12',
-        'N15-babj-cts-13',
-        'N15-babj-cts-14',
-        'N15-babj-cts-15'
-      ]
-      this.currentContent = []
+      this.indicatorId = randomString()
+      this.rootId = randomString()
+
+      this.currentContent = {}
       this.columns = 2
       this.pageSize = 6
       this.currentPage = 1
       this.totalPage = 1
 
-      this.id = this.randomString(10) + 'resourceIndicator'
-    }
-
-    randomString(len) {
-      const chars =
-        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890'
-      const maxPos = chars.length
-      let str = ''
-      for (let i = 0; i < len; i++) {
-        str += chars.charAt(Math.floor(Math.random() * maxPos))
-      }
-      return str
+      this.autoPlayTimer = null
     }
 
     setData(data) {
@@ -58,24 +34,21 @@ export const Chart = function (Base) {
       const iconEl = `<img src="${titleIcon}"></img>`
       const titleText = `<span class="title-text">${title}</span>`
       return `<div class="resource-list__title">
-        ${iconEl}
-        ${titleText}
-      </div>`
+            ${iconEl}
+            ${titleText}
+          </div>`
     }
 
     // 内容
-    renderContent() {
+    renderContent(labels, values) {
       const icons = [cyan, green, yellow, purple]
-      const labels = ['接入', '收集', '处理', '分发']
-      const values = [10, 100, 200, 52]
 
       let contentItemEls = ''
-
       icons.forEach((icon, index) => {
         contentItemEls += `<div class="content-item">
-          <img src="${icon}"/>
-          <span>${labels[index]}：${values[index]}</span>
-        </div>`
+              <img src="${icon}"/>
+              <span>${labels[index]}：${values[index]}</span>
+            </div>`
       })
 
       return `<div class="content-wrapper">${contentItemEls}</div>`
@@ -85,24 +58,50 @@ export const Chart = function (Base) {
     renderList() {
       let listEls = ''
 
-      this.currentContent = this.demoData.slice(
-        (this.currentPage - 1) * this.pageSize,
-        this.currentPage * this.pageSize
-      )
-
-      this.currentContent.forEach((title) => {
-        const titleEl = this.renderTitle(title)
-        const contentEl = this.renderContent()
-        listEls += `<div class="list-item" style="background: url(${resourceBg}) no-repeat,
-         linear-gradient(transparent 42%, #defaf866 45% 88%, transparent 90%) no-repeat;
-         background-size: 100% 100%, 1px 100%;
-         background-position: 0 0, 48% 50%;">
-        ${titleEl}
-        ${contentEl}
-       </div>`
+      Object.keys(this.parserData).forEach((key) => {
+        this.currentContent[key] = this.parserData[key].data.slice(
+          (this.currentPage - 1) * this.pageSize,
+          this.currentPage * this.pageSize
+        )
       })
 
-      const lastLength = this.currentContent.length % this.columns
+      this.currentContent.hostName.forEach((title, index) => {
+        const titleEl = this.renderTitle(title)
+
+        const {
+          linkName,
+          linkCount,
+          colName,
+          colCount,
+          dealName,
+          dealCount,
+          distName,
+          distCount
+        } = this.currentContent
+        const labels = [
+          linkName[index],
+          colName[index],
+          dealName[index],
+          distName[index]
+        ]
+        const values = [
+          linkCount[index],
+          colCount[index],
+          dealCount[index],
+          distCount[index]
+        ]
+
+        const contentEl = this.renderContent(labels, values)
+        listEls += `<div class="list-item" style="background: url(${resourceBg}) no-repeat,
+             linear-gradient(transparent 42%, #defaf866 45% 88%, transparent 90%) no-repeat;
+             background-size: 100% 100%, 1px 100%;
+             background-position: 0 0, 48% 50%;">
+            ${titleEl}
+            ${contentEl}
+           </div>`
+      })
+
+      const lastLength = this.currentContent.hostName.length % this.columns
       const extra = lastLength === 0 ? 0 : this.columns - lastLength
 
       if (extra > 0) {
@@ -124,7 +123,8 @@ export const Chart = function (Base) {
 
       const changePage = (event) => {
         const { pageIndex } = event?.target?.dataset ?? {}
-        if (this.currentPage === Number(pageIndex)) return
+
+        if (this.currentPage === Number(pageIndex) || !pageIndex) return
 
         this.currentPage = Number(pageIndex)
         this.render()
@@ -132,14 +132,24 @@ export const Chart = function (Base) {
 
       // 添加事件
       const timer = setInterval(() => {
-        const el = document.getElementById(this.id)
+        const el = document.getElementById(this.indicatorId)
         if (el) {
           clearInterval(timer)
           el.onclick = (event) => changePage(event)
         }
       })
 
-      return `<div id="${this.id}" class="indicator-wrapper">${indicatorEls}</div>`
+      return `<div id="${this.indicatorId}" class="indicator-wrapper">${indicatorEls}</div>`
+    }
+
+    autoPlay() {
+      clearInterval(this.autoPlayTimer)
+
+      this.autoPlayTimer = setInterval(() => {
+        this.currentPage += 1
+        if (this.currentPage > this.totalPage) this.currentPage = 1
+        this.render()
+      }, 5000)
     }
 
     render() {
@@ -148,20 +158,46 @@ export const Chart = function (Base) {
       let domEls = ''
       domEls += this.renderList()
       domEls += this.renderIndicator()
-      this.el.innerHTML = `<div class="common-cpn__wrapper ">
-      <div class="resource-list__container">${domEls}</div>
+      this.el.innerHTML = `<div style="width: 100%;height: 100%;">
+        <div id="${this.rootId}" class="cts3-resource__wrapper_two">${domEls}</div>
       </div>`
+
+      // 添加自动轮播
+      this.autoPlay()
+
+      // 鼠标移入时停止轮播
+      const timer = setInterval(() => {
+        const el = document.getElementById(this.rootId)
+        if (el) {
+          clearInterval(timer)
+          el.onmouseover = (e) => {
+            clearInterval(this.autoPlayTimer)
+          }
+          el.onmouseleave = (e) => {
+            this.autoPlay()
+          }
+        }
+      })
     }
 
     resize({ width, height }) {
-      this.el.style.cssText += `;width:${width}px;height:${height}px;`
+      // width:405 height:250
+      this.el.style.cssText += `;width:${460}px;height:${280}px;`
     }
 
     setSeriesStyle(config) {
       this.columns = config.columns ?? 2
       this.pageSize = config.pageSize ?? 6
       this.currentPage = 1
-      this.totalPage = Math.ceil(this.demoData.length / this.pageSize)
+      this.totalPage = Math.ceil(
+        this.parserData.hostName.data.length / this.pageSize
+      )
+    }
+
+    setOption() {}
+
+    destroy() {
+      clearInterval(this.autoPlayTimer)
     }
   }
 

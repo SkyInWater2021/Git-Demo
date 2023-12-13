@@ -1,7 +1,7 @@
 import './global.css'
 import * as d3 from 'd3'
 import * as echarts from 'echarts'
-import { randomString, formatTime } from '../utils'
+import { randomString, formatTimeStr } from '../utils'
 import { defaultData, handleData } from '../getParser'
 
 export const Chart = function (Base) {
@@ -139,7 +139,7 @@ export const Chart = function (Base) {
                 </div>`
               }
 
-              el += `<div>${marker} 日期：${formatTime(
+              el += `<div>${marker} 日期：${formatTimeStr(
                 this.parserData.originData['PERIOD_DATE'].data[dataIndex]
               )}</div>`
 

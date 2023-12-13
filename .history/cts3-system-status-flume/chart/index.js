@@ -29,7 +29,6 @@ export const Chart = function (Base) {
           trigger: 'axis',
           axisPointer: { type: 'cross' },
           formatter: (e) => {
-            console.log(e)
             let date = ''
             let els = ''
             e.forEach((item, index) => {
