@@ -23,12 +23,12 @@ const timer = setInterval(() => {
       const secondChild = rowElement.children[1]
 
       if (firstChild) {
-        firstChild.style.width = '0'
+        firstChild.style.width = '10%'
       }
 
       if (secondChild) {
-        secondChild.style.width = '100%'
-        secondChild.style.background = 'white'
+        secondChild.style.width = '90%'
+        secondChild.style.background = '#0b1824'
       }
     }
   }

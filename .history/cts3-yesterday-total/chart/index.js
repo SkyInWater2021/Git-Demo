@@ -19,7 +19,6 @@ export const Chart = function (Base) {
     }
 
     setData(data) {
-      console.log('🍌🍌🍌setData调用🍌🍌🍌')
       this.parserData = data
       this.render()
     }
@@ -127,10 +126,11 @@ export const Chart = function (Base) {
           totalEls += `<div class="total-chart__item" >${item}</div>`
         })
 
-      // TODO 根据后端返回的异常来判断,而不是小于0就是异常
-      const wavePercentageEl = `<div class="total-wave" style="color:${
-        wavePercentage < 0 ? '#db6e66' : '#5cc78f'
-      }">${wavePercentage}%</div>`
+      let wavePercentageEl = `<div class="total-wave" style="color:${this.parserData.levelColor}">${wavePercentage}%</div>`
+
+      if (!this.parserData.showWave) {
+        wavePercentageEl = `<div class="total-wave" style="color:${this.parserData.levelColor}">数据异常</div>`
+      }
 
       return `
       <div class="total-current">
@@ -146,7 +146,6 @@ export const Chart = function (Base) {
     }
 
     render() {
-      console.log('🍊🍊🍊🍊render调用🍊🍊🍊🍊')
       this.el.innerHTML = ''
       let domEls = ''
       domEls += this.renderTotal()
@@ -163,8 +162,8 @@ export const Chart = function (Base) {
     }
 
     setSeriesStyle(config) {
-      this.styleConfig.left = config.gridLeft
-      this.styleConfig.right = config.gridRight
+      this.styleConfig.unusual = config.unusual
+      this.styleConfig.fatalException = config.fatalException
     }
 
     setOption() {}

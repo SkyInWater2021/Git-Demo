@@ -1,7 +1,7 @@
 export default function () {
   return [
     {
-      name: 'firstName',
+      name: 'firstName1',
       type: 'select',
       label: 'label',
       property: 'dimension',

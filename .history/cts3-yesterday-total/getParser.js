@@ -4,36 +4,36 @@ import { formatArrayData } from './utils'
 export const defaultData = formatArrayData(response.data)
 
 export function handleData(data = defaultData, config) {
-  console.log('🍎🍎🍎getParser调用用🍎🍎🍎:', data)
-
   let total = 0 // 总量
   let average = 0 // 平均量
   let wavePercentage = '0' // 波动百分比
-
-  // TODO 波动异常判断
-  // ...
-
-  // TODO 波动百分比后端返回
-  // ...
+  let levelColor = ''
+  let showWave = true
 
   const totalDataIndex = data['DATA_TYPE']?.data.findIndex((item) => !item)
+
   if (totalDataIndex !== -1) {
     const totalNumber = data['FILESIZE_COUNT'].data[totalDataIndex]
     const averageNumber = data['FILESIZE_AVG'].data[totalDataIndex]
 
     total = formatFileSize(totalNumber)
     average = formatFileSize(averageNumber)
-    wavePercentage = (
-      ((totalNumber - averageNumber) / averageNumber) *
-      100
-    ).toFixed(1)
+    wavePercentage = (data['DATA_PCT'].data[totalDataIndex] * 100).toFixed(1)
+    const type = data['DATA_PCT_TYPE'].data[totalDataIndex]
+    if (type === 0) levelColor = '#5cc78f'
+    if (type === 1) levelColor = '#f1ca6a'
+    if (type === 2) levelColor = '#db6e66'
+
+    if (!totalNumber || !averageNumber) showWave = false
   }
 
   return {
     total,
     average,
     wavePercentage,
-    originData: data
+    originData: data,
+    levelColor,
+    showWave
   }
 }
 
@@ -55,7 +55,7 @@ export function formatFileSize(fileSize) {
   }
 
   const pSize = String(size).split('.')[0].length // 正数部分长度
-  const formattedSize = size.toFixed(5 - pSize)
+  const formattedSize = size.toFixed(6 - pSize)
   const unit = units[unitIndex]
 
   return `${formattedSize} ${unit}`

@@ -1,20 +1,14 @@
-import defaultData from './defaultData.json'
+import response from './response.json'
+import { formatShowData } from './utils'
 
-export const dataKeyMap = {
-  detail: 'detail'
-}
+export const defaultData = formatShowData(response.data)
 
-// 处理数据
-export function handleData(data = defaultData, config = dataKeyMap) {
-  console.log(data, config)
+export function handleData(data = defaultData, config) {
+  const itemData = data['item'].data.map((item) => JSON.parse(item))
+  const policyName = data['policyName'].data
+  const policyTitle = data['policyTitle'].data
 
-  const titleType = config.type ?? '类别'
-  const titleText = config.title ?? '默认标题'
-
-  return {
-    titleType,
-    titleText
-  }
+  return { itemData, policyName, policyTitle }
 }
 
 export default function () {

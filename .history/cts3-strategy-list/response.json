@@ -1,0 +1,40 @@
+{
+  "cache": 1,
+  "code": 200,
+  "msg": "正常",
+  "data": [
+    {
+      "id": "0",
+      "policyType": 0,
+      "policyName": "接入",
+      "policyTitle": "数据源数量,资料类型数量",
+      "item": "[{\"itemCount\":\"433/147\",\"itemName\":\"ftp\"},{\"itemCount\":\"251/748\",\"itemName\":\"ftp\"},{\"itemCount\":\"191/692\",\"itemName\":\"ftp\"},{\"itemCount\":\"336/246\",\"itemName\":\"ftp\"},{\"itemCount\":\"749/414\",\"itemName\":\"ftp\"},{\"itemCount\":\"215/628\",\"itemName\":\"ftp\"}]",
+      "utime": 1702429765695
+    },
+    {
+      "id": "1",
+      "policyType": 1,
+      "policyName": "收集",
+      "policyTitle": "资料类型数量",
+      "item": "[{\"itemCount\":\"61\",\"itemName\":\"地面\"},{\"itemCount\":\"156\",\"itemName\":\"地面\"},{\"itemCount\":\"274\",\"itemName\":\"地面\"},{\"itemCount\":\"147\",\"itemName\":\"地面\"},{\"itemCount\":\"359\",\"itemName\":\"地面\"},{\"itemCount\":\"69\",\"itemName\":\"地面\"}]",
+      "utime": 1702429765695
+    },
+    {
+      "id": "2",
+      "policyType": 2,
+      "policyName": "处理",
+      "policyTitle": "算法引用次数",
+      "item": "[{\"itemCount\":\"119\",\"itemName\":\"唯一性检查\"},{\"itemCount\":\"100\",\"itemName\":\"唯一性检查\"},{\"itemCount\":\"131\",\"itemName\":\"唯一性检查\"},{\"itemCount\":\"13\",\"itemName\":\"唯一性检查\"},{\"itemCount\":\"218\",\"itemName\":\"唯一性检查\"},{\"itemCount\":\"134\",\"itemName\":\"唯一性检查\"}]",
+      "utime": 1702429765696
+    },
+    {
+      "id": "3",
+      "policyType": 3,
+      "policyName": "分发",
+      "policyTitle": "数据源数量,资料类型数量",
+      "item": "[{\"itemCount\":\"24/228\",\"itemName\":\"模式中心\"},{\"itemCount\":\"143/842\",\"itemName\":\"模式中心\"},{\"itemCount\":\"86/561\",\"itemName\":\"模式中心\"},{\"itemCount\":\"55/768\",\"itemName\":\"模式中心\"},{\"itemCount\":\"198/856\",\"itemName\":\"模式中心\"},{\"itemCount\":\"38/850\",\"itemName\":\"模式中心\"}]",
+      "utime": 1702429765696
+    }
+  ],
+  "total": 0
+}

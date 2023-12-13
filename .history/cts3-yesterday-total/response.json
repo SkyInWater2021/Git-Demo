@@ -4,61 +4,86 @@
   "msg": "正常",
   "data": [
     {
-      "FILESIZE_COUNT": 2957527548405,
-      "FILESIZE_AVG": 4704978700164,
+      "FILESIZE_COUNT": 26079156310800,
+      "FILESIZE_AVG": 47677700866436,
       "DATA_TYPE": null,
-      "PERIOD_DATE": 20231207,
-      "DATA_TYPE_NAME": null
+      "PERIOD_DATE": 20231212,
+      "DATA_TYPE_NAME": null,
+      "DATA_PCT_TYPE": 2,
+      "DATA_PCT": -0.453
     },
     {
-      "FILESIZE_COUNT": 1735956101,
-      "FILESIZE_AVG": 1919387932,
-      "DATA_TYPE": "J.0001.0002.R001",
-      "PERIOD_DATE": 20231207,
-      "DATA_TYPE_NAME": "标准格式全体扫天气雷达基数据"
-    },
-    {
-      "FILESIZE_COUNT": 1533975,
-      "FILESIZE_AVG": 2716842,
-      "DATA_TYPE": "A.0001.0042.R001",
-      "PERIOD_DATE": 20231207,
-      "DATA_TYPE_NAME": "省级区域站地面小时观测资料（BUFR格式）（质控后）"
-    },
-    {
-      "FILESIZE_COUNT": 14945348090,
-      "FILESIZE_AVG": 16511160750,
-      "DATA_TYPE": "B.0005.0004.R001",
-      "PERIOD_DATE": 20231207,
-      "DATA_TYPE_NAME": "GNSS/MET压缩文件"
-    },
-    {
-      "FILESIZE_COUNT": 1033328,
-      "FILESIZE_AVG": 1205665,
+      "FILESIZE_COUNT": 541818466,
+      "FILESIZE_AVG": 682561545,
       "DATA_TYPE": "A.0001.0044.R001",
-      "PERIOD_DATE": 20231207,
-      "DATA_TYPE_NAME": "中国国家站地面小时观测资料(BUFR格式)(质控后)"
+      "PERIOD_DATE": 20231212,
+      "DATA_TYPE_NAME": "中国国家站地面小时观测资料(BUFR格式)(质控后)",
+      "DATA_PCT_TYPE": 1,
+      "DATA_PCT": -0.2062
     },
     {
-      "FILESIZE_COUNT": 5162649,
-      "FILESIZE_AVG": 5156934,
-      "DATA_TYPE": "B.0001.0030.R001",
-      "PERIOD_DATE": 20231207,
-      "DATA_TYPE_NAME": "中国高空观测数据文件（BUFR格式）（质控后地面-500百帕）"
+      "FILESIZE_COUNT": 128864,
+      "FILESIZE_AVG": 142160,
+      "DATA_TYPE": "G.0003.0004.R001",
+      "PERIOD_DATE": 20231212,
+      "DATA_TYPE_NAME": "中国酸雨观测资料（BUFR格式）(质控后)",
+      "DATA_PCT_TYPE": 0,
+      "DATA_PCT": -0.0935
     },
     {
-      "FILESIZE_COUNT": 69073921553,
-      "FILESIZE_AVG": 68503831578,
-      "DATA_TYPE": "B.0007.0001.R001",
-      "PERIOD_DATE": 20231207,
-      "DATA_TYPE_NAME": "风廓线雷达功率谱数据"
-    },
-    {
-      "FILESIZE_COUNT": 24747903,
-      "FILESIZE_AVG": 26782319,
+      "FILESIZE_COUNT": 1599530494,
+      "FILESIZE_AVG": 2101189859,
       "DATA_TYPE": "M.0012.0002.R001",
-      "PERIOD_DATE": 20231207,
-      "DATA_TYPE_NAME": "全国城镇精细化预报产品－各省的订正预报产品"
+      "PERIOD_DATE": 20231212,
+      "DATA_TYPE_NAME": "全国城镇精细化预报产品－各省的订正预报产品",
+      "DATA_PCT_TYPE": 1,
+      "DATA_PCT": -0.2388
+    },
+    {
+      "FILESIZE_COUNT": 24232285,
+      "FILESIZE_AVG": 30643536,
+      "DATA_TYPE": "B.0001.0030.R001",
+      "PERIOD_DATE": 20231212,
+      "DATA_TYPE_NAME": "中国高空观测数据文件（BUFR格式）（质控后地面-500百帕）",
+      "DATA_PCT_TYPE": 1,
+      "DATA_PCT": -0.2092
+    },
+    {
+      "FILESIZE_COUNT": 9856909963,
+      "FILESIZE_AVG": 12400303232,
+      "DATA_TYPE": "A.0001.0042.R001",
+      "PERIOD_DATE": 20231212,
+      "DATA_TYPE_NAME": "省级区域站地面小时观测资料（BUFR格式）（质控后）",
+      "DATA_PCT_TYPE": 1,
+      "DATA_PCT": -0.2051
+    },
+    {
+      "FILESIZE_COUNT": 85321730392,
+      "FILESIZE_AVG": 110409771601,
+      "DATA_TYPE": "B.0005.0004.R001",
+      "PERIOD_DATE": 20231212,
+      "DATA_TYPE_NAME": "GNSS/MET压缩文件",
+      "DATA_PCT_TYPE": 1,
+      "DATA_PCT": -0.2272
+    },
+    {
+      "FILESIZE_COUNT": 1391110971054,
+      "FILESIZE_AVG": 1973482089615,
+      "DATA_TYPE": "J.0001.0002.R001",
+      "PERIOD_DATE": 20231212,
+      "DATA_TYPE_NAME": "标准格式全体扫天气雷达基数据",
+      "DATA_PCT_TYPE": 1,
+      "DATA_PCT": -0.2951
+    },
+    {
+      "FILESIZE_COUNT": 548195005724,
+      "FILESIZE_AVG": 666873880219,
+      "DATA_TYPE": "B.0007.0001.R001",
+      "PERIOD_DATE": 20231212,
+      "DATA_TYPE_NAME": "风廓线雷达功率谱数据",
+      "DATA_PCT_TYPE": 1,
+      "DATA_PCT": -0.178
     }
   ],
-  "total": 8
+  "total": 9
 }
