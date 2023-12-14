@@ -1,5 +1,5 @@
 export const PAGE_NAME = 'DomesticMeteorologicalCommunicationSystemCTS3'
 
-export const CPN_NAME = 'NAS_List_CTS3'
+export const CPN_NAME = 'DataVolumeChordCTS3'
 
-export const CPN_TITLE = 'NAS列表CTS3'
+export const CPN_TITLE = '和弦图收集总量CTS3'

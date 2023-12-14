@@ -1,4 +1,7 @@
 import { defaultData, handleData } from '../getParser'
+import { randomString } from '../utils'
+import { href } from '../themes/basic/config'
+
 import './global.css'
 
 export const Chart = function (Base) {
@@ -8,6 +11,9 @@ export const Chart = function (Base) {
       this.el = el
 
       this.parserData = handleData(defaultData)
+
+      this.moreBtnId = randomString()
+      this.moreHref = href
     }
 
     setData(data) {
@@ -23,21 +29,33 @@ export const Chart = function (Base) {
       const titleEl = ` <span  style="padding-left:14px;">${title}，数量</span>`
       const countEl = `<span style="color:#FEA100">${count}</span>`
       const newEl = `<span class="new-tip">new</span>`
-      const moreBtnEl = `<span class="more-btn">更多>></span>`
+
+      const moreBtnEl = `<div id=${this.moreBtnId}  target="blank" class="more-btn">更多>></div>`
 
       const isNew = Date.now() - new Date(time).getTime() <= 1000 * 60 * 60 * 3
 
       let domEls = titleEl + countEl
       if (isNew) domEls += newEl
-      domEls += moreBtnEl
 
       this.el.innerHTML = `<div style="box-sizing: border-box;width: 100%;height: 100%; ">
       <div class="cts3-systemStatusMessage__wrapper_two">
         <div class="warning-wrapper">
-          ${domEls}
+          <div style="flex:1;">${domEls}</div>
+          ${moreBtnEl}
         </div>
       </div>
       </div>`
+
+      // 添加事件
+      const timer = setInterval(() => {
+        const el = document.getElementById(this.moreBtnId)
+        if (el) {
+          clearInterval(timer)
+          el.onclick = () => {
+            window.open(this.moreHref, '_blank')
+          }
+        }
+      })
     }
 
     resize({ width, height }) {
@@ -45,7 +63,9 @@ export const Chart = function (Base) {
       this.el.style.cssText += `;width:${width}px;height:${height}px;`
     }
 
-    setSeriesStyle(config) {}
+    setSeriesStyle(config) {
+      this.moreHref = config.href
+    }
 
     setOption() {}
 

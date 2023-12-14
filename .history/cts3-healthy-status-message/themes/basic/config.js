@@ -1,31 +1,24 @@
+export const href = 'http://10.40.120.50:8080/cts/login/userLoginView.action'
+
 export default function (themeType, SHOWUTILS) {
   const { intl } = SHOWUTILS
 
   return [
     {
       title: intl.formatMessage({
-        id: 'barConfig',
-        defaultMessage: '实时传输情况'
+        id: 'href-config',
+        defaultMessage: '页面跳转'
       }),
-      type: 'grid',
+      type: 'position',
       fields: [
         {
-          name: 'series_gridLeft',
+          name: 'series_href',
           label: intl.formatMessage({
-            id: 'series_gridLeft',
-            defaultMessage: '左边距离'
+            id: 'series_href_id',
+            defaultMessage: '跳转地址'
           }),
-          type: 'number',
-          value: 80
-        },
-        {
-          name: 'series_gridRight',
-          label: intl.formatMessage({
-            id: 'series_gridRight',
-            defaultMessage: '右边距离'
-          }),
-          type: 'number',
-          value: 120
+          type: 'input',
+          value: href
         }
       ]
     }
