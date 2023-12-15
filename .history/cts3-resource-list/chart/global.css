@@ -26,13 +26,16 @@
   padding: 0 10px;
   line-height: 26px;
 }
+
 .cts3-resource__wrapper_two .resource-list__title img {
   width: 15px;
   height: 15px;
+  cursor: pointer;
 }
 .cts3-resource__wrapper_two .resource-list__title .title-text {
   margin-left: 4px;
   text-shadow: 0 0 5px #6be6f4;
+  cursor: pointer;
 }
 
 .cts3-resource__wrapper_two .content-wrapper {

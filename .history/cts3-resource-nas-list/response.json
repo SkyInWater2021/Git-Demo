@@ -5,27 +5,30 @@
   "data": [
     {
       "id": "0",
+      "workName": "Nas-0",
       "workDir": "work10",
-      "workSpace": "528T",
+      "workSpace": "771T",
       "workNote": "省级",
       "workMax": "10万，50万",
-      "utime": 1702451053029
+      "utime": 1702624832965
     },
     {
       "id": "1",
+      "workName": "Nas-1",
       "workDir": "work11",
-      "workSpace": "651T",
+      "workSpace": "545T",
       "workNote": "省级",
       "workMax": "10万，50万",
-      "utime": 1702451053029
+      "utime": 1702624832965
     },
     {
       "id": "2",
+      "workName": "Nas-2",
       "workDir": "work12",
-      "workSpace": "787T",
+      "workSpace": "165T",
       "workNote": "省级",
       "workMax": "10万，50万",
-      "utime": 1702451053029
+      "utime": 1702624832965
     }
   ],
   "total": 0

@@ -1,5 +1,6 @@
 import { randomString } from '../utils'
 import { defaultData, handleData } from '../getParser'
+import { hexColors } from './colors'
 import './global.css'
 
 import * as Highcharts from 'highcharts'
@@ -28,14 +29,19 @@ export const Chart = function (Base) {
 
     initChart() {
       Highcharts.chart(this.chartInstanceId, {
+        colors: ['#63c4c7', ...hexColors.map((color) => `${color}`)],
         title: { text: '' },
         chart: { backgroundColor: 'transparent' },
-        tooltip: {},
-        credits: { enabled: false },
+        credits: { enabled: false }, // 去除水印
         series: [
           {
-            keys: ['from', 'to', 'weight', 'name'],
-            data: this.parserData.chordData,
+            keys: ['from', 'to', 'weight', 'name', 'color', 'id'],
+            data: [
+              ...this.parserData.firstNode,
+              ...this.parserData.chordData.sort(() => {
+                return Math.random() - Math.random()
+              })
+            ],
             type: 'dependencywheel',
             name: '数据收集总量',
             dataLabels: {

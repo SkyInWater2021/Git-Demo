@@ -1,5 +1,7 @@
 import { defaultData, handleData } from '../getParser'
 import { nasIcon } from '../imgs/nas-icon'
+import { randomString } from '../utils'
+import { href } from '../themes/basic/config'
 import './global.css'
 
 export const Chart = function (Base) {
@@ -9,6 +11,9 @@ export const Chart = function (Base) {
       this.el = el
 
       this.parserData = handleData(defaultData)
+
+      this.rootId = randomString()
+      this.href = href
     }
 
     setData(data) {
@@ -16,13 +21,13 @@ export const Chart = function (Base) {
       this.render()
     }
 
-    renderItemTitle() {
-      const titleIcon = `<img src="${nasIcon}"/>`
-      const titleText = `<span>NAS</span>`
+    renderItemTitle(title) {
+      const titleIcon = `<img style="cursor:pointer" src="${nasIcon}" data-title="${title}" />`
+      const titleText = `<span style="cursor:pointer" data-title="${title}">${title}</span>`
       return `<div class="nas-title__container">${titleIcon + titleText}</div>`
     }
 
-    renderListItem(labels, values) {
+    renderListItem(labels, values, title) {
       let listItemEls = ''
 
       labels.forEach((label, index) => {
@@ -33,7 +38,7 @@ export const Chart = function (Base) {
       })
 
       return `<div class="nas-content__container">
-        ${this.renderItemTitle()}
+        ${this.renderItemTitle(title)}
         ${listItemEls}
         </div>`
     }
@@ -43,7 +48,8 @@ export const Chart = function (Base) {
 
       let els = ''
       this.parserData['id'].data.forEach((_, index) => {
-        const { workDir, workMax, workNote, workSpace } = this.parserData
+        const { workDir, workMax, workNote, workSpace, workName } =
+          this.parserData
         const values = [
           workDir.data[index],
           workSpace.data[index],
@@ -51,7 +57,8 @@ export const Chart = function (Base) {
           workMax.data[index]
         ]
 
-        els += this.renderListItem(labels, values)
+        const title = workName.data[index]
+        els += this.renderListItem(labels, values, title)
       })
 
       return `<div class="list-container">${els}</div>`
@@ -62,8 +69,22 @@ export const Chart = function (Base) {
       let domEls = ''
       domEls += this.renderList()
       this.el.innerHTML = `<div style="width: 100%;height: 100%;">
-        <div class="cts3-nas__wrapper_two">${domEls}</div>
+        <div id="${this.rootId}" class="cts3-nas__wrapper_two">${domEls}</div>
       </div>`
+
+      const timer = setInterval(() => {
+        const el = document.getElementById(this.rootId)
+        if (el) {
+          clearInterval(timer)
+          el.onclick = (e) => {
+            const { title } = e.target.dataset
+            if (!title) return
+            const hrefKey = 'workName'
+            const href = `${this.href}?${hrefKey}=${title}`
+            window.open(href, '_blank')
+          }
+        }
+      })
     }
 
     resize({ width, height }) {
@@ -71,7 +92,9 @@ export const Chart = function (Base) {
       this.el.style.cssText += `;width:${400}px;height:${165}px;`
     }
 
-    setSeriesStyle(config) {}
+    setSeriesStyle(config) {
+      this.href = config.href
+    }
 
     setOption() {}
 

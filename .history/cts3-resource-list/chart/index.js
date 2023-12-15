@@ -2,6 +2,7 @@ import { defaultData, handleData } from '../getParser'
 import { titleIcon, resourceBg } from '../imgs/title-icon'
 import { cyan, yellow, green, purple } from '../imgs/icons'
 import { randomString } from '../utils'
+import { href } from '../themes/basic/config'
 import './global.css'
 
 export const Chart = function (Base) {
@@ -22,20 +23,25 @@ export const Chart = function (Base) {
       this.totalPage = 1
 
       this.autoPlayTimer = null
+
+      this.href = href
     }
 
     setData(data) {
       this.parserData = data
+      this.totalPage = Math.ceil(
+        this.parserData.hostName.data.length / this.pageSize
+      )
+      this.currentPage = 1
       this.render()
     }
 
     // 标题
     renderTitle(title) {
-      const iconEl = `<img src="${titleIcon}"></img>`
-      const titleText = `<span class="title-text">${title}</span>`
+      const iconEl = `<img src="${titleIcon}" data-title="${title}"></img>`
+      const titleText = `<span class="title-text" data-title="${title}">${title}</span>`
       return `<div class="resource-list__title">
-            ${iconEl}
-            ${titleText}
+              ${iconEl} ${titleText}
           </div>`
     }
 
@@ -176,6 +182,13 @@ export const Chart = function (Base) {
           el.onmouseleave = (e) => {
             this.autoPlay()
           }
+          el.onclick = (e) => {
+            const { title } = e.target.dataset
+            if (!title) return
+            const hrefKey = 'hostName'
+            const href = `${this.href}?${hrefKey}=${title}`
+            window.open(href, '_blank')
+          }
         }
       })
     }
@@ -186,12 +199,12 @@ export const Chart = function (Base) {
     }
 
     setSeriesStyle(config) {
-      this.columns = config.columns ?? 2
-      this.pageSize = config.pageSize ?? 6
-      this.currentPage = 1
+      this.href = config.href
+
       this.totalPage = Math.ceil(
         this.parserData.hostName.data.length / this.pageSize
       )
+      this.currentPage = 1
     }
 
     setOption() {}
